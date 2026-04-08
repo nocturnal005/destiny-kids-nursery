@@ -38,6 +38,11 @@
   flex-shrink: 0;
 }
 
+/* 'Nursery' suffix — hidden on desktop, shown on mobile */
+.nav__brand-suffix {
+  display: none;
+}
+
 .nav__logo {
   height: 40px; /* Resize original logo to fit neatly */
   width: auto;
@@ -522,6 +527,15 @@
     display: flex;
   }
 
+  /* Show 'Nursery' suffix and hide CTA on mobile/tablet */
+  .nav__brand-suffix {
+    display: inline;
+  }
+
+  .nav__cta {
+    display: none;
+  }
+
   .footer__grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -556,10 +570,9 @@
   }
 }
 
-/* Compact the CTA button on small phones */
+/* Smaller brand text on very small phones */
 @media (max-width: 480px) {
-  .nav__cta.btn {
-    font-size: 0.75rem;
-    padding: var(--space-xs) var(--space-md);
+  .nav__brand {
+    font-size: 1.1rem;
   }
 }
