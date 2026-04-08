@@ -535,12 +535,31 @@
 
   .footer__grid {
     grid-template-columns: 1fr;
-    gap: var(--space-xl);
+    gap: var(--space-2xl);
+  }
+
+  /* Add visual separators between footer columns on mobile */
+  .footer__grid > div + div {
+    padding-top: var(--space-lg);
+    border-top: 1px solid rgba(0,0,0,0.06);
   }
 
   .footer__bottom {
     flex-direction: column;
     gap: var(--space-md);
     text-align: center;
+  }
+
+  .footer__bottom-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Compact the CTA button on small phones */
+@media (max-width: 480px) {
+  .nav__cta.btn {
+    font-size: 0.75rem;
+    padding: var(--space-xs) var(--space-md);
   }
 }
