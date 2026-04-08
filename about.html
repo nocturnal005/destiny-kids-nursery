@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Destiny Kids Nursery</title>
+  <meta name="description" content="Learn about Destiny Kids Nursery's story, mission, values, team, and EYFS-aligned approach to early years education in South London.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css?v=2">
+  <link rel="stylesheet" href="css/tokens.css?v=2">
+  <link rel="stylesheet" href="css/global.css?v=2">
+  <link rel="stylesheet" href="css/animations.css?v=2">
+  <link rel="stylesheet" href="css/components.css?v=2">
+  <link rel="stylesheet" href="css/about.css?v=4">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav__brand">
+      <img src="assets/images/logo.png" alt="Destiny Kids Logo" class="nav__logo">
+      Destiny Kids
+    </a>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link nav__link--active">About</a>
+      <a href="registration.html" class="nav__link">Registration</a>
+      <a href="noticeboard.html" class="nav__link">Noticeboard</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </div>
+    <a href="contact.html" class="btn btn--lime nav__cta">Enquire Now</a>
+    <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav__mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav__link">Home</a>
+    <a href="about.html" class="nav__link">About</a>
+    <a href="registration.html" class="nav__link">Registration</a>
+    <a href="noticeboard.html" class="nav__link">Noticeboard</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="contact.html" class="btn btn--lime btn--lg">Enquire Now</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       HERO — Full-bleed with organic blob overlays
+       ═══════════════════════════════════════════════════════ -->
+  <section class="about-hero" id="aboutHero">
+    <!-- Decorative blobs -->
+    <div class="about-hero__blob about-hero__blob--teal"></div>
+    <div class="about-hero__blob about-hero__blob--orange"></div>
+    <div class="about-hero__blob about-hero__blob--lime"></div>
+    <img src="assets/images/about-hero.png" alt="Diverse group of happy children playing at Destiny Kids Nursery" class="about-hero__image">
+    <div class="about-hero__content reveal reveal--left">
+      <h1>About Destiny<br>Kids Nursery</h1>
+      <p>Nurturing little minds across South London since 2011.</p>
+      <a href="#our-story" class="btn btn--lime btn--lg">Learn More →</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       OUR STORY — Winding Road Timeline (Variant A)
+       ═══════════════════════════════════════════════════════ -->
+  <section class="about-story" id="our-story">
+    <!-- Background organic blobs -->
+    <div class="story-blob story-blob--teal"></div>
+    <div class="story-blob story-blob--orange"></div>
+    <div class="story-blob story-blob--lime"></div>
+
+    <div class="container relative-z">
+      <div class="story-header text-center">
+        <h2 class="story-title reveal reveal--up">Our Story</h2>
+        <p class="story-subtitle reveal reveal--up">A Legacy of Learning</p>
+      </div>
+
+      <div class="story-road">
+        <!-- Winding SVG path behind the nodes -->
+        <svg class="story-road__svg" viewBox="0 0 800 1600" fill="none" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="road-grad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#33CCCC" />
+              <stop offset="40%" stop-color="#FF9A4D" />
+              <stop offset="100%" stop-color="#E67A2E" />
+            </linearGradient>
+          </defs>
+          <path d="M 400,20 C 150,120 150,220 400,320 C 650,420 650,520 400,620 C 150,720 150,820 400,920 C 650,1020 650,1120 400,1220 C 150,1320 150,1420 400,1520" stroke="url(#road-grad)" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.5"/>
+        </svg>
+
+        <!-- NODE 1: 2011 — LEFT -->
+        <div class="story-milestone story-milestone--left reveal reveal--up">
+          <div class="story-milestone__photo story-milestone__photo--teal">
+            <img src="assets/images/story-2011.png" alt="Destiny Kids founded in 2011">
+          </div>
+          <div class="story-milestone__card">
+            <span class="story-milestone__year">2011</span>
+            <h3 class="story-milestone__title story-milestone__title--teal">Founded</h3>
+            <p class="story-milestone__desc">Destiny Kids Nursery founded in Battersea with a heartfelt mission: to create a place where every child feels safe, valued, and inspired to learn.</p>
+          </div>
+        </div>
+
+        <!-- NODE 2: 2013 — RIGHT (no photo) -->
+        <div class="story-milestone story-milestone--right reveal reveal--up">
+          <div class="story-milestone__card">
+            <span class="story-milestone__year">2013</span>
+            <h3 class="story-milestone__title story-milestone__title--orange">Ofsted Registered</h3>
+            <p class="story-milestone__desc">Achieved Ofsted registration and successfully completed our first inspection — a testament to the quality of our early years care and education.</p>
+          </div>
+          <div class="story-milestone__dot story-milestone__dot--orange"></div>
+        </div>
+
+        <!-- NODE 3: 2015 — LEFT (no photo) -->
+        <div class="story-milestone story-milestone--left reveal reveal--up">
+          <div class="story-milestone__dot story-milestone__dot--teal"></div>
+          <div class="story-milestone__card">
+            <span class="story-milestone__year">2015</span>
+            <h3 class="story-milestone__title story-milestone__title--teal">Online Presence</h3>
+            <p class="story-milestone__desc">Launched our first website and online presence, connecting with more local families and sharing our story with the community.</p>
+          </div>
+        </div>
+
+        <!-- NODE 4: 2018 — RIGHT (no photo) -->
+        <div class="story-milestone story-milestone--right reveal reveal--up">
+          <div class="story-milestone__card">
+            <span class="story-milestone__year">2018</span>
+            <h3 class="story-milestone__title story-milestone__title--orange">Expanded Services</h3>
+            <p class="story-milestone__desc">Expanded our services and programmes, updating our policies to meet GDPR compliance while enriching the learning experience for every child.</p>
+          </div>
+          <div class="story-milestone__dot story-milestone__dot--orange"></div>
+        </div>
+
+        <!-- NODE 5: 2020 — LEFT (with photo) -->
+        <div class="story-milestone story-milestone--left reveal reveal--up">
+          <div class="story-milestone__photo story-milestone__photo--orange">
+            <img src="assets/images/story-2020.jpg" alt="Destiny Kids Nursery at 228 Brixton Hill">
+          </div>
+          <div class="story-milestone__card">
+            <span class="story-milestone__year">2020</span>
+            <h3 class="story-milestone__title story-milestone__title--orange">Brixton Hill Branch</h3>
+            <p class="story-milestone__desc">Opened our second branch at 228 Brixton Hill, serving families across Lambeth with the same warmth and dedication.</p>
+          </div>
+        </div>
+
+        <!-- NODE 6: 2024 — RIGHT (with photo) -->
+        <div class="story-milestone story-milestone--right reveal reveal--up">
+          <div class="story-milestone__card">
+            <span class="story-milestone__year">2024</span>
+            <h3 class="story-milestone__title story-milestone__title--teal">13 Years of Care</h3>
+            <p class="story-milestone__desc">Celebrating 13 years of nurturing care, having supported hundreds of children and families on their early years journey.</p>
+          </div>
+          <div class="story-milestone__photo story-milestone__photo--teal">
+            <img src="assets/images/story-2024.png" alt="Celebrating 13 years in 2024">
+          </div>
+        </div>
+
+        <!-- NODE 7: 2026 — LEFT (with photo) -->
+        <div class="story-milestone story-milestone--left reveal reveal--up">
+          <div class="story-milestone__photo story-milestone__photo--orange">
+            <img src="assets/images/story-2026-families.png" alt="Destiny Kids families together in 2026">
+          </div>
+          <div class="story-milestone__card">
+            <span class="story-milestone__year">2026</span>
+            <h3 class="story-milestone__title story-milestone__title--orange">New Chapter</h3>
+            <p class="story-milestone__desc">Continuing to grow, invest, and innovate new pathways to create value for children and their families.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       MISSION & VALUES — Magazine Spread (Variant K)
+       ═══════════════════════════════════════════════════════ -->
+  <section class="about-mission mag-spread" id="mission" style="background:#1a1a2e;border-radius:24px;max-width:1200px;margin:var(--space-xl) auto var(--space-2xl);overflow:hidden;padding:0;">
+    <!-- Hero area with pull-quote mission -->
+    <div class="mag-hero">
+      <div class="mag-hero__watermark" aria-hidden="true">M&V</div>
+      <h2 class="mag-hero__title reveal reveal--up">Mission <span>&</span> Values</h2>
+      <div class="mag-hero__quote reveal reveal--up">
+        <p>To provide the highest quality childcare that meets every child's emotional, physical, cultural, and educational needs — in a stimulating, safe, and loving environment where families feel genuinely welcomed and supported.</p>
+      </div>
+    </div>
+
+    <!-- Numbered value columns -->
+    <div class="mag-values">
+      <div class="mag-card reveal reveal--up">
+        <div class="mag-card__num mag-card__num--teal">01</div>
+        <h4>Learning Through Play</h4>
+        <p>Children learn best when they're having fun. Every activity sparks curiosity, encourages exploration, and builds skills through the joy of play.</p>
+        <div class="mag-card__line mag-card__line--teal"></div>
+      </div>
+      <div class="mag-card reveal reveal--up">
+        <div class="mag-card__num mag-card__num--orange">02</div>
+        <h4>Welcoming & Inclusive</h4>
+        <p>We celebrate diversity, respect differences, and create an environment where every child and family belongs.</p>
+        <div class="mag-card__line mag-card__line--orange"></div>
+      </div>
+      <div class="mag-card reveal reveal--up">
+        <div class="mag-card__num mag-card__num--lime">03</div>
+        <h4>Partnership with Parents</h4>
+        <p>We see ourselves as an extension of your family. Through open communication and regular progress reports, we keep you connected every step of the way.</p>
+        <div class="mag-card__line mag-card__line--lime"></div>
+      </div>
+      <div class="mag-card reveal reveal--up">
+        <div class="mag-card__num mag-card__num--rose">04</div>
+        <h4>Quality & Excellence</h4>
+        <p>Our staff undergo continuous professional development, our curriculum evolves with best practice, and we hold ourselves to the highest standards.</p>
+        <div class="mag-card__line mag-card__line--rose"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       MEET THE TEAM — Photo grid with blob masks
+       ═══════════════════════════════════════════════════════ -->
+  <section class="about-team" id="team">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <h2 class="headline-md reveal reveal--up">Meet the Team</h2>
+        <p class="body-lg reveal reveal--up" style="color: var(--on-surface-variant); margin-top: 0.75rem;">Passionate, qualified, and dedicated to your child's happiness.</p>
+      </div>
+
+      <div class="team-grid stagger">
+        <div class="team-card reveal reveal--scale">
+          <div class="team-card__photo team-blob-1">
+            <img src="assets/images/team-grace.png" alt="Grace O., Nursery Manager">
+          </div>
+          <h4 class="team-card__name" style="color: var(--primary);">Grace</h4>
+          <span class="team-card__role">Nursery Manager</span>
+        </div>
+        <div class="team-card reveal reveal--scale">
+          <div class="team-card__photo team-blob-2">
+            <img src="assets/images/team-james.png" alt="James A., Deputy Manager">
+          </div>
+          <h4 class="team-card__name" style="color: var(--secondary);">James</h4>
+          <span class="team-card__role">Deputy Manager</span>
+        </div>
+        <div class="team-card reveal reveal--scale">
+          <div class="team-card__photo team-blob-3">
+            <img src="assets/images/team-mariam.png" alt="Mariam D., Baby Room Lead">
+          </div>
+          <h4 class="team-card__name" style="color: var(--tertiary);">Mariam</h4>
+          <span class="team-card__role">Baby Room Lead</span>
+        </div>
+        <div class="team-card reveal reveal--scale">
+          <div class="team-card__photo team-blob-4">
+            <img src="assets/images/team-emily.png" alt="Emily R., Pre-School Teacher">
+          </div>
+          <h4 class="team-card__name" style="color: #F07A92;">Emily</h4>
+          <span class="team-card__role">Pre-School Teacher</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       EYFS FRAMEWORK — Orbital Constellation
+       ═══════════════════════════════════════════════════════ -->
+  <section class="eyfs-orbit" id="eyfs">
+    <div class="eyfs-orbit__header">
+      <h2 class="headline-md reveal reveal--up">EYFS Framework</h2>
+      <p class="body-lg reveal reveal--up" style="color: var(--on-surface-variant); margin-top: 0.75rem;">Everything we teach is guided by the Early Years Foundation Stage.</p>
+    </div>
+
+    <div class="orbit-system reveal reveal--up">
+      <!-- Central sun -->
+      <div class="orbit-sun">
+        <span>EYFS</span>
+        <small>Framework</small>
+      </div>
+
+      <!-- Inner ring — 3 Prime Areas -->
+      <div class="orbit-ring orbit-ring--inner">
+        <div class="orbit-planet planet--comm">Communication &amp; Language</div>
+        <div class="orbit-planet planet--personal">Personal Development</div>
+        <div class="orbit-planet planet--physical">Physical Dev.</div>
+      </div>
+
+      <!-- Outer ring — 4 Specific Areas -->
+      <div class="orbit-ring orbit-ring--outer">
+        <div class="orbit-planet planet--literacy">Literacy</div>
+        <div class="orbit-planet planet--maths">Mathematics</div>
+        <div class="orbit-planet planet--world">Understanding the World</div>
+        <div class="orbit-planet planet--arts">Expressive Arts</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       TWO BRANCHES, ONE FAMILY
+       ═══════════════════════════════════════════════════════ -->
+  <section class="about-branches" id="branches">
+    <div class="about-branches__wave-top"></div>
+    <div class="container">
+      <div class="section-header section-header--center">
+        <h2 class="headline-md text-white reveal reveal--up">Two Branches, One Family</h2>
+        <p class="body-lg text-white reveal reveal--up" style="opacity: 0.9; margin-top: 0.75rem;">Whether you're in Brixton Hill or Battersea, you'll find the same warmth, quality, and commitment at every Destiny Kids nursery.</p>
+      </div>
+
+      <div class="branches-grid stagger">
+        <!-- Brixton Hill -->
+        <div class="branch-card reveal reveal--up">
+          <div class="branch-card__icon">
+            <img src="https://api.iconify.design/mdi/map-marker.svg?color=%2333CCCC" alt="" width="32">
+          </div>
+          <h3>Brixton Hill</h3>
+          <ul class="branch-card__details">
+            <li><img src="https://api.iconify.design/mdi/map-marker-outline.svg?color=%2333CCCC" alt="" width="16"> 228 Brixton Hill, London SW2 1HE</li>
+            <li><img src="https://api.iconify.design/mdi/clock-outline.svg?color=%2333CCCC" alt="" width="16"> Mon – Fri: 7:00 am – 7:00 pm</li>
+            <li><img src="https://api.iconify.design/mdi/phone-outline.svg?color=%2333CCCC" alt="" width="16"> 020 8674 1693</li>
+            <li><img src="https://api.iconify.design/mdi/email-outline.svg?color=%2333CCCC" alt="" width="16"> brixtonhill@destinykidsnursery.com</li>
+          </ul>
+          <a href="contact.html" class="btn btn--lime">Book a Tour →</a>
+        </div>
+
+        <!-- Battersea -->
+        <div class="branch-card reveal reveal--up">
+          <div class="branch-card__icon">
+            <img src="https://api.iconify.design/mdi/map-marker.svg?color=%23FF9A4D" alt="" width="32">
+          </div>
+          <h3>Battersea</h3>
+          <ul class="branch-card__details">
+            <li><img src="https://api.iconify.design/mdi/map-marker-outline.svg?color=%23FF9A4D" alt="" width="16"> Methodist Mission, London SW11 3QA</li>
+            <li><img src="https://api.iconify.design/mdi/clock-outline.svg?color=%23FF9A4D" alt="" width="16"> Mon – Fri: 7:30 am – 6:30 pm</li>
+            <li><img src="https://api.iconify.design/mdi/phone-outline.svg?color=%23FF9A4D" alt="" width="16"> 07727 972 642</li>
+            <li><img src="https://api.iconify.design/mdi/email-outline.svg?color=%23FF9A4D" alt="" width="16"> info@destinykidsnursery.com</li>
+          </ul>
+          <a href="contact.html" class="btn btn--lime">Book a Tour →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/images/logo.png" alt="Destiny Kids Logo" class="footer__logo">
+          <div class="footer__brand-name">Destiny Kids Nursery</div>
+          <div class="footer__tagline">Destined for Greatness</div>
+          <p class="footer__description">Providing quality childcare and early years education across South London since 2011.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="about.html" class="footer__link">About Us</a>
+          <a href="registration.html" class="footer__link">Registration</a>
+          <a href="noticeboard.html" class="footer__link">Noticeboard</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Our Branches</h4>
+          <p class="footer__link"><strong>Brixton Hill</strong></p>
+          <p class="footer__link">228 Brixton Hill, SW2 1HE</p>
+          <p class="footer__link">020 8674 1693</p>
+          <p class="footer__link" style="margin-bottom: var(--space-md);">brixtonhill@destinykidsnursery.com</p>
+          <p class="footer__link"><strong>Battersea</strong></p>
+          <p class="footer__link">Methodist Mission, SW11 3QA</p>
+          <p class="footer__link">07727 972 642</p>
+          <p class="footer__link">info@destinykidsnursery.com</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Connect</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="TikTok"><img src="https://api.iconify.design/ri/tiktok-fill.svg?color=white" alt="TikTok" width="18"></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><img src="https://api.iconify.design/ri/facebook-fill.svg?color=white" alt="Facebook" width="18"></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><img src="https://api.iconify.design/ri/instagram-fill.svg?color=white" alt="Instagram" width="18"></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><img src="https://api.iconify.design/ri/youtube-fill.svg?color=white" alt="YouTube" width="18"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Destiny Kids Nursery. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <span>Ofsted Approved &middot; DBS Checked</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+/* ── Design Tokens ─────────────────────────────────────────────────────
+   Editorial Organicism — "The Nurtured Gallery"
+   All design decisions expressed as CSS Custom Properties.
+─────────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── Surface Hierarchy (The Nesting System) ──────────────────────── */
+  --surface:                    #fef8f3;
+  --surface-bright:             #fffcf8;
+  --surface-container-lowest:   #ffffff;
+  --surface-container-low:      #f8f3ee;
+  --surface-container:          #f2ede8;
+  --surface-container-high:     #ece7e2;
+  --surface-container-highest:  #e6e1dc;
+
+  /* ── Brand: Teal ─────────────────────────────────────────────────── */
+  --primary:                    #2ABFBF;
+  --primary-container:          #e0f7f7;
+  --primary-light:              #5ce1e1;
+  --on-primary:                 #ffffff;
+  --on-primary-container:       #0e4545;
+
+  /* ── Accent: Bright Orange ───────────────────────────────────────── */
+  --secondary:                  #FF8A3D;
+  --secondary-container:        #ffeedf;
+  --on-secondary:               #ffffff;
+
+  /* ── Accent: Lime Green ──────────────────────────────────────────── */
+  --tertiary:                   #A4CD39;
+  --tertiary-container:         #f2fad2;
+  --tertiary-hover:             #8bb22d;
+  --on-tertiary:                #ffffff;
+
+  /* ── Accent: Supporting ──────────────────────────────────────────── */
+  --accent-pink:                #E76F8B;
+  --accent-green:               #7BC67E;
+  --accent-yellow:              #FFD166;
+  --slate-grey:                 #4A5568;
+
+  /* ── Text (NEVER #000000) ────────────────────────────────────────── */
+  --on-surface:                 #1d1b19;
+  --on-surface-variant:         #4a4640;
+  --on-surface-subtle:          #8e8a84;
+  --outline:                    #7c7770;
+  --outline-variant:            #ccc3d1;
+
+  /* ── Semantic ────────────────────────────────────────────────────── */
+  --success:                    #A4CD39;
+  --error:                      #E76F6F;
+  --info:                       #2ABFBF;
+
+  /* ── Typography ──────────────────────────────────────────────────── */
+  --font-display:               'Nunito', sans-serif;
+  --font-heading:               'Plus Jakarta Sans', sans-serif;
+  --font-body:                  'Inter', sans-serif;
+
+  /* Display */
+  --display-lg-size:            3.5rem;
+  --display-lg-weight:          400;
+  --display-lg-lh:              1.1;
+
+  --display-md-size:            2.75rem;
+  --display-md-weight:          400;
+  --display-md-lh:              1.15;
+
+  /* Headline */
+  --headline-lg-size:           2.25rem;
+  --headline-lg-weight:         700;
+  --headline-lg-lh:             1.2;
+
+  --headline-md-size:           1.75rem;
+  --headline-md-weight:         600;
+  --headline-md-lh:             1.25;
+
+  --headline-sm-size:           1.375rem;
+  --headline-sm-weight:         600;
+  --headline-sm-lh:             1.3;
+
+  /* Title */
+  --title-lg-size:              1.25rem;
+  --title-lg-weight:            600;
+  --title-lg-lh:                1.4;
+
+  --title-md-size:              1.125rem;
+  --title-md-weight:            500;
+  --title-md-lh:                1.4;
+
+  /* Body */
+  --body-lg-size:               1rem;
+  --body-lg-weight:             400;
+  --body-lg-lh:                 1.65;
+
+  --body-md-size:               0.9375rem;
+  --body-md-weight:             400;
+  --body-md-lh:                 1.6;
+
+  /* Label */
+  --label-lg-size:              0.875rem;
+  --label-lg-weight:            500;
+  --label-lg-lh:                1.4;
+
+  --label-md-size:              0.8125rem;
+  --label-md-weight:            500;
+  --label-md-lh:                1.4;
+
+  /* Caption */
+  --caption-size:               0.75rem;
+  --caption-weight:             400;
+  --caption-lh:                 1.5;
+
+  /* ── Spacing ─────────────────────────────────────────────────────── */
+  --space-2xs:                  0.25rem;
+  --space-xs:                   0.5rem;
+  --space-sm:                   0.75rem;
+  --space-md:                   1rem;
+  --space-lg:                   1.5rem;
+  --space-xl:                   2rem;
+  --space-2xl:                  3rem;
+  --space-3xl:                  4rem;
+  --space-4xl:                  6rem;
+  --space-5xl:                  8rem;
+
+  /* ── Border Radius ───────────────────────────────────────────────── */
+  --radius-sm:                  8px;
+  --radius-md:                  12px;
+  --radius-lg:                  16px;
+  --radius-xl:                  24px;
+  --radius-2xl:                 32px;
+  --radius-pill:                9999px;
+  --radius-blob:                30% 70% 60% 40% / 50% 30% 70% 50%;
+  --radius-blob-alt:            60% 40% 30% 70% / 40% 60% 50% 50%;
+
+  /* ── Ambient Purple Shadows (NOT standard grey) ──────────────────── */
+  --shadow-subtle:              0 2px 8px rgba(107, 76, 154, 0.04);
+  --shadow-soft:                0 8px 24px rgba(107, 76, 154, 0.06);
+  --shadow-medium:              0 12px 32px rgba(107, 76, 154, 0.08);
+  --shadow-elevated:            0 20px 48px rgba(107, 76, 154, 0.12);
+  --shadow-glow:                0 0 0 4px rgba(107, 76, 154, 0.12);
+
+  /* ── Ghost Border (accessibility fallback ONLY) ──────────────────── */
+  --ghost-border:               1px solid rgba(204, 195, 209, 0.15);
+
+  /* ── Gradients ───────────────────────────────────────────────────── */
+  --gradient-primary:           radial-gradient(ellipse at 30% 20%, #6b4c9a, #533480);
+  --gradient-cta-glow:          linear-gradient(180deg, rgba(255,255,255,0.10) 0%, transparent 50%);
+  --gradient-hero:              linear-gradient(135deg, #fef8f3 0%, #f3eafa 50%, #e0f7f7 100%);
+
+  /* ── Transitions ─────────────────────────────────────────────────── */
+  --ease-default:               250ms ease;
+  --ease-smooth:                400ms cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring:                600ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-gentle:                300ms ease-in-out;
+
+  /* ── Z-Index ─────────────────────────────────────────────────────── */
+  --z-base:                     0;
+  --z-above:                    10;
+  --z-sticky:                   50;
+  --z-nav:                      100;
+  --z-overlay:                  200;
+  --z-modal:                    300;
+  --z-toast:                    400;
+
+  /* ── Container ───────────────────────────────────────────────────── */
+  --container-max:              1280px;
+  --container-padding:          clamp(1.5rem, 5vw, 4rem);
+}

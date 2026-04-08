@@ -1,0 +1,155 @@
+/* ── Animations ────────────────────────────────────────────────────────
+   Editorial Organicism — All keyframes + scroll reveal system
+─────────────────────────────────────────────────────────────────────── */
+
+/* ═══════════════════════════════════════════════════════════════════════
+   KEYFRAMES
+   ═══════════════════════════════════════════════════════════════════════ */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scalePop {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(-8px) rotate(2deg); }
+}
+
+@keyframes blobMorph {
+  0%, 100% { border-radius: 30% 70% 60% 40% / 50% 30% 70% 50%; }
+  25%      { border-radius: 50% 50% 70% 30% / 40% 60% 40% 60%; }
+  50%      { border-radius: 40% 60% 30% 70% / 60% 40% 60% 40%; }
+  75%      { border-radius: 60% 40% 50% 50% / 30% 70% 50% 50%; }
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(244, 162, 97, 0.3); }
+  50%      { box-shadow: 0 0 0 12px rgba(244, 162, 97, 0); }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes slideReveal {
+  from { clip-path: inset(100% 0 0 0); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   SCROLL REVEAL SYSTEM
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.reveal {
+  opacity: 0;
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal--up    { transform: translateY(30px); }
+.reveal--down  { transform: translateY(-20px); }
+.reveal--left  { transform: translateX(-40px); }
+.reveal--right { transform: translateX(40px); }
+.reveal--scale { transform: scale(0.85); }
+
+.reveal.active {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+/* Stagger children */
+.stagger > .reveal:nth-child(1) { transition-delay: 0ms; }
+.stagger > .reveal:nth-child(2) { transition-delay: 80ms; }
+.stagger > .reveal:nth-child(3) { transition-delay: 160ms; }
+.stagger > .reveal:nth-child(4) { transition-delay: 240ms; }
+.stagger > .reveal:nth-child(5) { transition-delay: 320ms; }
+.stagger > .reveal:nth-child(6) { transition-delay: 400ms; }
+.stagger > .reveal:nth-child(7) { transition-delay: 480ms; }
+.stagger > .reveal:nth-child(8) { transition-delay: 560ms; }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   AMBIENT ANIMATIONS
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.float--slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.blob-morph {
+  animation: blobMorph 12s ease-in-out infinite;
+}
+
+.gradient-shift {
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
+}
+
+.pulse-glow {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+/* Typing cursor */
+.typing-cursor {
+  border-right: 2px solid var(--primary);
+  animation: blink 0.8s step-end infinite;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   REDUCED MOTION
+   ═══════════════════════════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .float, .float--slow, .blob-morph, .gradient-shift, .pulse-glow {
+    animation: none;
+  }
+
+  .typing-cursor {
+    animation: none;
+    border-right-color: var(--primary);
+  }
+}

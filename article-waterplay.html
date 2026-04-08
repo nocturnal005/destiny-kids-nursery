@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Play as a Vehicle for Emotional Consistency — Destiny Kids Nursery</title>
+  <meta name="description" content="A growing body of peer-reviewed research points to structured water play as an effective, evidence-based intervention for supporting emotional consistency in young children.">
+  <meta property="og:title" content="Water Play as a Vehicle for Emotional Consistency in Early Childhood Education">
+  <meta property="og:description" content="Structured water play supports emotional regulation, patience, and social-emotional competence in nursery-age children.">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css?v=2">
+  <link rel="stylesheet" href="css/tokens.css?v=2">
+  <link rel="stylesheet" href="css/global.css?v=2">
+  <link rel="stylesheet" href="css/animations.css?v=2">
+  <link rel="stylesheet" href="css/components.css?v=2">
+  <link rel="stylesheet" href="css/noticeboard.css?v=2">
+  <style>
+    /* Article Page Specific Styles */
+    .article-page {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: calc(72px + var(--space-3xl)) clamp(1rem, 5vw, 3rem) var(--space-3xl);
+    }
+
+    .article-page__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-heading);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+      margin-bottom: var(--space-xl);
+      transition: opacity var(--ease-default);
+    }
+
+    .article-page__back:hover { opacity: 0.7; }
+
+    .article-page__tag {
+      display: inline-block;
+      font-family: var(--font-heading);
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #fff;
+      background: var(--primary);
+      padding: 0.25rem 0.8rem;
+      border-radius: var(--radius-pill);
+      margin-bottom: var(--space-md);
+    }
+
+    .article-page__title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 900;
+      color: var(--on-surface);
+      line-height: 1.15;
+      margin-bottom: var(--space-md);
+    }
+
+    .article-page__meta {
+      display: flex;
+      align-items: center;
+      gap: var(--space-lg);
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      color: var(--on-surface-variant);
+      margin-bottom: var(--space-xl);
+      padding-bottom: var(--space-lg);
+      border-bottom: 1px solid var(--surface-container-high);
+    }
+
+    .article-page__meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .article-page__hero-img {
+      width: 100%;
+      border-radius: var(--radius-2xl);
+      object-fit: cover;
+      max-height: 420px;
+      margin-bottom: var(--space-2xl);
+      box-shadow: 0 12px 32px rgba(142, 78, 20, 0.08);
+    }
+
+    .article-page__content {
+      font-family: var(--font-body);
+      font-size: 1.02rem;
+      color: var(--on-surface);
+      line-height: 1.85;
+    }
+
+    .article-page__content h2 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--on-surface);
+      margin: var(--space-2xl) 0 var(--space-md);
+    }
+
+    .article-page__content p {
+      margin-bottom: var(--space-lg);
+    }
+
+    .article-page__content a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .article-page__content a:hover {
+      color: var(--on-primary-container);
+    }
+
+    .article-page__references {
+      margin-top: var(--space-2xl);
+      padding-top: var(--space-xl);
+      border-top: 2px solid var(--surface-container-high);
+    }
+
+    .article-page__references h2 {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--on-surface);
+      margin-bottom: var(--space-md);
+    }
+
+    .article-page__references p {
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      color: var(--on-surface-variant);
+      line-height: 1.7;
+      margin-bottom: var(--space-sm);
+      padding-left: 1.5rem;
+      text-indent: -1.5rem;
+    }
+
+    .article-page__cta {
+      margin-top: var(--space-3xl);
+      background: var(--surface-container-low);
+      border-radius: var(--radius-2xl);
+      padding: var(--space-2xl);
+      text-align: center;
+    }
+
+    .article-page__cta h3 {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--on-surface);
+      margin-bottom: 0.4rem;
+    }
+
+    .article-page__cta p {
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--on-surface-variant);
+      margin-bottom: var(--space-lg);
+    }
+
+    .article-page__cta a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.75rem 2rem;
+      font-family: var(--font-heading);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #fff;
+      background: var(--primary);
+      border-radius: var(--radius-pill);
+      text-decoration: none;
+      transition: transform var(--ease-smooth), box-shadow var(--ease-smooth);
+    }
+
+    .article-page__cta a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(42,191,191,0.25);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════ NAVIGATION ═══════ -->
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav__brand">
+      <img src="assets/images/logo.png" alt="Destiny Kids Logo" class="nav__logo">
+      Destiny Kids
+    </a>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="registration.html" class="nav__link">Registration</a>
+      <a href="noticeboard.html" class="nav__link nav__link--active">Noticeboard</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </div>
+    <a href="contact.html" class="btn btn--lime nav__cta">Enquire Now</a>
+    <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav__mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav__link">Home</a>
+    <a href="about.html" class="nav__link">About</a>
+    <a href="registration.html" class="nav__link">Registration</a>
+    <a href="noticeboard.html" class="nav__link nav__link--active">Noticeboard</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="contact.html" class="btn btn--lime btn--lg">Enquire Now</a>
+  </div>
+
+  <!-- ═══════ ARTICLE ═══════ -->
+  <article class="article-page">
+    <a href="noticeboard.html" class="article-page__back">← Back to Noticeboard</a>
+
+    <span class="article-page__tag">Research</span>
+    <h1 class="article-page__title">Water Play as a Vehicle for Emotional Consistency in Early Childhood Education</h1>
+
+    <div class="article-page__meta">
+      <span>✍️ Destiny Kids Nursery</span>
+      <span>📅 12 April 2026</span>
+      <span>⏱ 4 min read</span>
+    </div>
+
+    <img src="assets/images/noticeboard-waterplay.png" alt="Diverse toddlers happily playing at water play stations in a nursery classroom" class="article-page__hero-img">
+
+    <div class="article-page__content">
+      <h2>Introduction</h2>
+      <p>Emotional regulation remains one of the most complex developmental challenges in early childhood education. A growing body of peer-reviewed research now points to structured water play as an effective, evidence-based intervention for supporting emotional consistency in young children, with implications for nursery school practice globally.</p>
+
+      <p>A classroom action research study conducted by Irawati, Rouf, and Syarif (2026) at Muhammadiyah University Cirebon, Indonesia, examined the impact of water play activities on the emotional development of early childhood learners. The study, published in the <em>Journal of Educational Sciences</em>, found that sensory-based water play activities created conditions in which children practised patience, adhered to structured rules, and engaged in positive peer interaction — all of which are foundational components of social-emotional competence (Irawati et al., 2026).</p>
+
+      <p>Critically, the research identified that the calming properties of water as a sensory medium are not incidental. Rather, they serve a deliberate pedagogical function. The tactile and repetitive nature of water play provides children with a regulated sensory environment that reduces emotional reactivity and supports the development of self-control (Irawati et al., 2026). This is particularly significant for nursery-age children, many of whom lack the neurological maturity to manage emotional responses through cognitive strategies alone.</p>
+
+      <p>The study's findings align with broader scholarship on sensory-based interventions in early childhood settings, which consistently identifies physical, play-mediated engagement as more developmentally effective than passive or screen-based alternatives for emotional skill-building (Finkel, 2026).</p>
+
+      <h2>Conclusion</h2>
+      <p>The evidence presented by Irawati et al. (2026) makes a compelling case for the deliberate integration of water play into nursery school curricula. Institutions that treat sensory play as a structured pedagogical tool — rather than recreational filler — are better positioned to support children's long-term emotional competence, social readiness, and overall developmental outcomes.</p>
+
+      <div class="article-page__references">
+        <h2>References</h2>
+        <p>Finkel, E. (2026) 'Sensory play can enhance crucial skill-building in young students', <em>K-12 Dive</em>, 28 January. Available at: <a href="https://www.k12dive.com/news/sensory-play-supports-crucial-skill-building-in-young-students/810724/" target="_blank" rel="noopener">https://www.k12dive.com/news/sensory-play-supports-crucial-skill-building-in-young-students/810724/</a> (Accessed: 8 April 2026).</p>
+        <p>Irawati, I., Rouf, A.M. and Syarif H, M.A. (2026) 'Consistency of children's emotions through water play activities group A', <em>Journal of Educational Sciences</em>, 10(4), pp. 296–306. Available at: <a href="https://doi.org/10.31258/jes.10.4.p.296-306" target="_blank" rel="noopener">https://doi.org/10.31258/jes.10.4.p.296-306</a> (Accessed: 8 April 2026).</p>
+      </div>
+    </div>
+
+    <div class="article-page__cta">
+      <h3>Interested in Our Approach?</h3>
+      <p>Sensory play is at the heart of everything we do at Destiny Kids Nursery.</p>
+      <a href="contact.html">Book a Tour →</a>
+    </div>
+  </article>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/images/logo.png" alt="Destiny Kids Logo" class="footer__logo">
+          <div class="footer__brand-name">Destiny Kids Nursery</div>
+          <div class="footer__tagline">Destined for Greatness</div>
+          <p class="footer__description">Providing quality childcare and early years education across South London since 2011.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="about.html" class="footer__link">About Us</a>
+          <a href="registration.html" class="footer__link">Registration</a>
+          <a href="noticeboard.html" class="footer__link">Noticeboard</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Our Branches</h4>
+          <p class="footer__link"><strong>Brixton Hill</strong></p>
+          <p class="footer__link">228 Brixton Hill, SW2 1HE</p>
+          <p class="footer__link">020 8674 1693</p>
+          <p class="footer__link" style="margin-bottom: var(--space-md);">brixtonhill@destinykidsnursery.com</p>
+          <p class="footer__link"><strong>Battersea</strong></p>
+          <p class="footer__link">Methodist Mission, SW11 3QA</p>
+          <p class="footer__link">07727 972 642</p>
+          <p class="footer__link">info@destinykidsnursery.com</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Connect</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="TikTok"><img src="https://api.iconify.design/ri/tiktok-fill.svg?color=white" alt="TikTok" width="18"></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><img src="https://api.iconify.design/ri/facebook-fill.svg?color=white" alt="Facebook" width="18"></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><img src="https://api.iconify.design/ri/instagram-fill.svg?color=white" alt="Instagram" width="18"></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><img src="https://api.iconify.design/ri/youtube-fill.svg?color=white" alt="YouTube" width="18"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Destiny Kids Nursery. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <span>Ofsted Approved &middot; DBS Checked</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

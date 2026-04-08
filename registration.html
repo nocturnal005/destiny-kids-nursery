@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration &amp; Fees — Destiny Kids Nursery</title>
+  <meta name="description" content="Join the Destiny Kids family. Learn about our fees, government funding, and complete our online enquiry form to secure your child's place in Brixton Hill or Battersea.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css?v=2">
+  <link rel="stylesheet" href="css/tokens.css?v=2">
+  <link rel="stylesheet" href="css/global.css?v=2">
+  <link rel="stylesheet" href="css/animations.css?v=2">
+  <link rel="stylesheet" href="css/components.css?v=2">
+  <link rel="stylesheet" href="css/registration.css?v=4">
+</head>
+<body class="reg-body">
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAVIGATION — Matching Home & About pages
+       ═══════════════════════════════════════════════════════ -->
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav__brand">
+      <img src="assets/images/logo.png" alt="Destiny Kids Logo" class="nav__logo">
+      Destiny Kids
+    </a>
+
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="registration.html" class="nav__link nav__link--active">Registration</a>
+      <a href="noticeboard.html" class="nav__link">Noticeboard</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </div>
+
+    <a href="contact.html" class="btn btn--lime nav__cta">Enquire Now</a>
+
+    <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav__link">Home</a>
+    <a href="about.html" class="nav__link">About</a>
+    <a href="registration.html" class="nav__link nav__link--active">Registration</a>
+    <a href="noticeboard.html" class="nav__link">Noticeboard</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="contact.html" class="btn btn--lime btn--lg">Enquire Now</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       HERO — Grid split: teal left / photo right
+       ═══════════════════════════════════════════════════════ -->
+  <section class="reg-hero" id="hero">
+    <div class="reg-hero__left">
+      <span class="reg-hero__tag">◆ Enrolment Open</span>
+      <h1 class="reg-hero__headline">Join the<br>Destiny<span class="reg-hero__highlight">Family</span></h1>
+      <p class="reg-hero__subtitle">Join us at our innovative nursery school where toddlers and children have been loving our nursery.</p>
+      <a href="#enquiry-form" class="reg-hero__btn">Start Enquiry →</a>
+    </div>
+    <div class="reg-hero__right">
+      <img src="assets/images/registration-hero.png" alt="Happy children engaged in activities at Destiny Kids Nursery" class="reg-hero__photo">
+      <div class="reg-hero__stripe"></div>
+      <div class="reg-hero__num">01</div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       INFORMATION CARDS — Bold bordered blocks
+       ═══════════════════════════════════════════════════════ -->
+  <section class="reg-cards" id="cards">
+    <div class="reg-cards__header">
+      <div class="reg-cards__header-line"></div>
+      <h2>Registration & Fees</h2>
+      <div class="reg-cards__header-line"></div>
+    </div>
+    <div class="reg-cards__grid">
+
+      <!-- Card 1: Fee Information -->
+      <div class="reg-card reveal reveal--up">
+        <div class="reg-card__num">01</div>
+        <h2 class="reg-card__title">Fee Information</h2>
+        <ul class="reg-card__list">
+          <li>Registration Fee: <strong>£60.00</strong> (non-refundable)</li>
+          <li>Deposit: 1 week fees payable before settling-in</li>
+          <li>Fees payable monthly in advance by Direct Debit, Standing Order, Cheque, or Cash</li>
+          <li>Sibling discount available for full-time attendees</li>
+          <li>Fees revised annually</li>
+        </ul>
+      </div>
+
+      <!-- Card 2: Government Funding -->
+      <div class="reg-card reveal reveal--up">
+        <div class="reg-card__num">02</div>
+        <h2 class="reg-card__title">Government Funding</h2>
+        <ul class="reg-card__list">
+          <li><strong>15 hours/week</strong> free Government Childcare Funding for eligible 3 and 4-year-olds after the term of their 3rd birthday</li>
+          <li>Applied by Nursery, reflected in fees</li>
+          <li>Sibling Discount applies for full-time attendance (not on free funding)</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       3 SIMPLE STEPS — Diamond shaped numbers
+       ═══════════════════════════════════════════════════════ -->
+  <section class="reg-steps" id="steps">
+    <h2 class="reg-steps__heading">3 Simple Steps</h2>
+
+    <div class="reg-steps__row">
+
+      <!-- Step 1 -->
+      <div class="reg-step reveal reveal--up">
+        <div class="reg-step__diamond">
+          <span class="reg-step__diamond-num">1</span>
+        </div>
+        <span class="reg-step__label">Step 01</span>
+        <h3 class="reg-step__title">Register Interest</h3>
+        <p class="reg-step__desc">Complete the online form below to join our waiting list.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="reg-step reveal reveal--up">
+        <div class="reg-step__diamond reg-step__diamond--orange">
+          <span class="reg-step__diamond-num">2</span>
+        </div>
+        <span class="reg-step__label reg-step__label--orange">Step 02</span>
+        <h3 class="reg-step__title">Visit Us</h3>
+        <p class="reg-step__desc">Arrange an appointment to tour our nursery — your child is welcome too!</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="reg-step reveal reveal--up">
+        <div class="reg-step__diamond">
+          <span class="reg-step__diamond-num">3</span>
+        </div>
+        <span class="reg-step__label">Step 03</span>
+        <h3 class="reg-step__title">Secure Place</h3>
+        <p class="reg-step__desc">Pay deposit and complete enrolment upon offer of a place.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       ONLINE ENQUIRY FORM — Bordered geometric layout
+       ═══════════════════════════════════════════════════════ -->
+  <section class="reg-form-section" id="enquiry-form">
+    <h2 class="reg-form-section__heading">Enquiry Form</h2>
+    <p class="reg-form-section__sub">Complete the form below and we'll be in touch within 24 hours.</p>
+
+    <div class="reg-form-layout">
+
+      <!-- Form -->
+      <form class="reg-form" id="registrationForm" novalidate>
+
+        <!-- Row 1: Child Details + Parent/Guardian Details -->
+        <div class="reg-form__cols">
+
+          <!-- Left column -->
+          <div>
+            <p class="reg-form__col-title">Child Details</p>
+
+            <div class="reg-form__group">
+              <label class="reg-form__label" for="childName">Child's Full Name <span class="reg-form__req">*</span></label>
+              <input class="reg-form__input" type="text" id="childName" name="childName" placeholder="First Name" required>
+            </div>
+
+            <div class="reg-form__group">
+              <label class="reg-form__label" for="childLastName">Last Name</label>
+              <input class="reg-form__input" type="text" id="childLastName" name="childLastName" placeholder="Name">
+            </div>
+
+            <div class="reg-form__group">
+              <label class="reg-form__label" for="childPhone">Phone</label>
+              <input class="reg-form__input" type="tel" id="childPhone" name="childPhone" placeholder="Phone">
+            </div>
+
+            <div class="reg-form__group">
+              <label class="reg-form__label" for="childCare">Child Care hours</label>
+              <select class="reg-form__select" id="childCare" name="childCare">
+                <option value="">Child Care hours</option>
+                <option value="15hr">15 hours</option>
+                <option value="30hr">30 hours</option>
+                <option value="full">Full time</option>
+              </select>
+            </div>
+
+            <div class="reg-form__group">
+              <label class="reg-form__label">Hours</label>
+              <div class="reg-form__radio-group">
+                <label class="reg-form__radio-row">
+                  <input type="radio" name="hours" value="childcare"> Child Care hours
+                </label>
+                <label class="reg-form__radio-row">
+                  <input type="radio" name="hours" value="6-9"> 6–9 hours
+                </label>
+                <label class="reg-form__radio-row">
+                  <input type="radio" name="hours" value="allhours"> All hours
+                </label>
+              </div>
+            </div>
+
+            <div class="reg-form__group">
+              <label class="reg-form__label" for="emailField">E-mail</label>
+              <input class="reg-form__input" type="email" id="emailField" name="email" placeholder="Email">
+            </div>
+          </div>
+
+          <!-- Right column -->
+          <div>
+            <p class="reg-form__col-title">Parent/Guardian Details</p>
+
+            <div class="reg-form__group">
+              <label class="reg-form__label" for="parentName">Name</label>
+              <input class="reg-form__input" type="text" id="parentName" name="parentName" placeholder="Name">
+            </div>
+
+            <div class="reg-form__group">
+              <label class="reg-form__label" for="parentGuardian">Parent/Guardian</label>
+              <input class="reg-form__input" type="text" id="parentGuardian" name="parentGuardian" placeholder="Parent/Guardian">
+            </div>
+
+            <div class="reg-form__group">
+              <label class="reg-form__label" for="parentEmail">Email</label>
+              <input class="reg-form__input" type="email" id="parentEmail" name="parentEmail" placeholder="Email">
+            </div>
+
+            <div class="reg-form__group">
+              <label class="reg-form__label" for="parentPhone">Phone</label>
+              <input class="reg-form__input" type="tel" id="parentPhone" name="parentPhone" placeholder="Phone">
+            </div>
+
+            <div class="reg-form__group">
+              <label class="reg-form__label">Options</label>
+              <div class="reg-form__check-group">
+                <label class="reg-form__check-row">
+                  <input type="checkbox" name="options" value="childCheckbox"> Child and Checkboxs
+                </label>
+                <label class="reg-form__check-row">
+                  <input type="checkbox" name="options" value="other"> Checkboxes &amp; Checkboxs
+                </label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="reg-form__group">
+          <label class="reg-form__label" for="message">Message</label>
+          <textarea class="reg-form__textarea" id="message" name="message" placeholder="Message"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="reg-form__submit-wrap">
+          <button type="submit" class="reg-form__submit" id="submitBtn">Submit →</button>
+        </div>
+
+      </form>
+
+      <!-- Floating contact card -->
+      <aside class="reg-contact-card reveal reveal--up">
+        <div class="reg-contact-card__icon">📞</div>
+        <h3 class="reg-contact-card__title">Call Us</h3>
+
+        <div class="reg-contact-card__divider"></div>
+
+        <div class="reg-contact-card__entry">
+          <p class="reg-contact-card__location">Battersea</p>
+          <p class="reg-contact-card__number">020 7924 6394</p>
+        </div>
+
+        <div class="reg-contact-card__entry">
+          <p class="reg-contact-card__location">Brixton Hill</p>
+          <p class="reg-contact-card__number">020 7732 2544</p>
+        </div>
+
+        <p class="reg-contact-card__or">OR</p>
+
+        <div class="reg-contact-card__entry">
+          <p class="reg-contact-card__location">Mobile</p>
+          <p class="reg-contact-card__number">07727 972 642</p>
+        </div>
+
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       TESTIMONIALS — Geometric grid, hover-to-invert
+       ═══════════════════════════════════════════════════════ -->
+  <section class="reg-testimonials" id="testimonials">
+    <div class="reg-testimonials__inner">
+
+      <h2 class="reg-testimonials__heading">Testimonials</h2>
+
+      <div class="reg-testi-grid">
+
+        <div class="reg-testi-card">
+          <div class="reg-testi-quote-mark">"</div>
+          <p class="reg-testi-text">The staff at Destiny Kids are incredible. My daughter has absolutely flourished since joining the nursery. She comes home every day bursting with stories about what she's learned and who she's played with.</p>
+          <div class="reg-testi-author">
+            <div class="reg-testi-avatar">AL</div>
+            <div>
+              <div class="reg-testi-name">Amara L.</div>
+              <div class="reg-testi-role">Parent, Brixton Hill Branch</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reg-testi-card">
+          <div class="reg-testi-quote-mark">"</div>
+          <p class="reg-testi-text">A true home away from home. I was so nervous about leaving my son in childcare for the first time, but the team made us both feel so welcome. The online progress updates are brilliant.</p>
+          <div class="reg-testi-author">
+            <div class="reg-testi-avatar">MT</div>
+            <div>
+              <div class="reg-testi-name">Mark T.</div>
+              <div class="reg-testi-role">Parent, Battersea Branch</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="reg-testi-nav">
+        <button class="reg-testi-arrow" aria-label="Previous">‹</button>
+        <div class="reg-testi-dots">
+          <span class="reg-testi-dot active"></span>
+          <span class="reg-testi-dot"></span>
+          <span class="reg-testi-dot"></span>
+        </div>
+        <button class="reg-testi-arrow" aria-label="Next">›</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER — Shared site footer
+       ═══════════════════════════════════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/images/logo.png" alt="Destiny Kids Logo" class="footer__logo">
+          <div class="footer__brand-name">Destiny Kids Nursery</div>
+          <div class="footer__tagline">Destined for Greatness</div>
+          <p class="footer__description">Providing quality childcare and early years education across South London since 2011.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="about.html" class="footer__link">About Us</a>
+          <a href="registration.html" class="footer__link">Registration</a>
+          <a href="noticeboard.html" class="footer__link">Noticeboard</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Our Branches</h4>
+          <p class="footer__link"><strong>Brixton Hill</strong></p>
+          <p class="footer__link">228 Brixton Hill, SW2 1HE</p>
+          <p class="footer__link">020 8674 1693</p>
+          <p class="footer__link" style="margin-bottom: var(--space-md);">brixtonhill@destinykidsnursery.com</p>
+          <p class="footer__link"><strong>Battersea</strong></p>
+          <p class="footer__link">Methodist Mission, SW11 3QA</p>
+          <p class="footer__link">07727 972 642</p>
+          <p class="footer__link">info@destinykidsnursery.com</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Connect</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="TikTok"><img src="https://api.iconify.design/ri/tiktok-fill.svg?color=white" alt="TikTok" width="18"></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><img src="https://api.iconify.design/ri/facebook-fill.svg?color=white" alt="Facebook" width="18"></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><img src="https://api.iconify.design/ri/instagram-fill.svg?color=white" alt="Instagram" width="18"></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><img src="https://api.iconify.design/ri/youtube-fill.svg?color=white" alt="YouTube" width="18"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Destiny Kids Nursery. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <span>Ofsted Approved &middot; DBS Checked</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=2"></script>
+
+</body>
+</html>

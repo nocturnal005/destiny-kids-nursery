@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destiny Kids Nursery — Nurturing Bright Futures, Playfully</title>
+  <meta name="description" content="Quality childcare in Brixton Hill & Battersea for children aged 0-4 years. Ofsted approved, DBS-checked staff, EYFS curriculum. Book a tour today.">
+  <meta name="keywords" content="nursery, childcare, Brixton Hill, Battersea, EYFS, Ofsted, early years, London nursery">
+  <meta property="og:title" content="Destiny Kids Nursery — Nurturing Bright Futures, Playfully">
+  <meta property="og:description" content="Quality childcare in Brixton Hill and Battersea for children aged 0-4 years.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css?v=2">
+  <link rel="stylesheet" href="css/tokens.css?v=2">
+  <link rel="stylesheet" href="css/global.css?v=2">
+  <link rel="stylesheet" href="css/animations.css?v=2">
+  <link rel="stylesheet" href="css/components.css?v=2">
+  <link rel="stylesheet" href="css/home.css?v=2">
+</head>
+<body>
+
+  <!-- NAVIGATION — Glassmorphic Floating Pill -->
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav__brand">
+      <img src="assets/images/logo.png" alt="Destiny Kids Logo" class="nav__logo">
+      Destiny Kids
+    </a>
+
+    <div class="nav__links">
+      <a href="index.html" class="nav__link nav__link--active">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="registration.html" class="nav__link">Registration</a>
+      <a href="noticeboard.html" class="nav__link">Noticeboard</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </div>
+
+    <a href="contact.html" class="btn btn--lime nav__cta">Enquire Now</a>
+
+    <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav__link nav__link--active">Home</a>
+    <a href="about.html" class="nav__link">About</a>
+    <a href="registration.html" class="nav__link">Registration</a>
+    <a href="noticeboard.html" class="nav__link">Noticeboard</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="contact.html" class="btn btn--lime btn--lg">Enquire Now</a>
+  </div>
+
+  <section class="hero" id="hero">
+    <!-- Full-bleed background looping video -->
+    <video class="hero__bg-image" autoplay loop muted playsinline>
+      <source src="assets/videos/hero-video.mp4" type="video/mp4">
+      <img src="assets/images/hero-child.png" alt="Happy toddler playing with colorful wooden blocks at Destiny Kids Nursery">
+    </video>
+    <!-- Playful Stagger with Soft Gradient Fade -->
+    <div class="hero__panel reveal reveal--left">
+      <h1 class="hero__title">
+        <span class="line-1">Nurturing</span>
+        <span class="line-2">Bright Futures,</span>
+        <span class="line-3">Playfully.</span>
+      </h1>
+      <p class="hero__subtitle">
+        A Modern, Caring Environment<br>for 0-4 Year Olds.
+      </p>
+      <div class="hero__cta">
+        <a href="contact.html" class="btn btn--lime btn--lg">Enquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: PROGRAMMES PREVIEW (ACCORDION) -->
+  <section class="programmes" id="programmes">
+    <div class="container" style="max-width: 1400px;">
+      <div class="section-header section-header--center">
+        <h2 class="headline-md reveal reveal--up">Programmes Preview</h2>
+      </div>
+
+      <div class="v3-accordion stagger">
+        <!-- Panel 1 -->
+        <div class="v3-panel reveal reveal--up">
+          <img src="assets/images/sensory-play.png" class="v3-bg" alt="Infant Care">
+          <div class="v3-overlay"></div>
+          <div class="v3-badge bg-orange">0-2</div>
+          <div class="v3-content">
+            <h3>Infant Care</h3>
+            <p>A gentle, sensory-rich environment focused on nurturing your baby's earliest milestones.</p>
+          </div>
+        </div>
+
+        <!-- Panel 2 -->
+        <div class="v3-panel reveal reveal--up">
+          <img src="assets/images/activities-creative.png" class="v3-bg" alt="Toddler">
+          <div class="v3-overlay"></div>
+          <div class="v3-badge bg-lime">2-3</div>
+          <div class="v3-content">
+            <h3>Toddler Exploration</h3>
+            <p>Where curious minds thrive through guided play, outdoor adventures, and creative arts.</p>
+          </div>
+        </div>
+
+        <!-- Panel 3 -->
+        <div class="v3-panel reveal reveal--up">
+          <img src="assets/images/reading-activity.png" class="v3-bg" alt="Preschool">
+          <div class="v3-overlay"></div>
+          <div class="v3-badge bg-teal">3-4</div>
+          <div class="v3-content">
+            <h3>Preschool Prep</h3>
+            <p>EYFS-focused learning designed to build independence and confidence ahead of primary school.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: TRUST BAR (Stacked Postcards) -->
+  <section class="trust-cards" id="trust">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <h2 class="headline-md reveal reveal--up">Built on Trust</h2>
+        <p class="body-lg reveal reveal--up" style="color: var(--on-surface-variant); margin-top: 0.75rem;">Every decision we make starts with your child's safety and happiness.</p>
+      </div>
+      <div class="trust-deck stagger">
+        <div class="trust-postcard reveal reveal--scale">
+          <div class="trust-postcard__icon"><img src="https://api.iconify.design/mdi/certificate-outline.svg?color=white" alt="Ofsted"></div>
+          <h3>Ofsted Outstanding</h3>
+          <p>Consistently rated at the highest level.</p>
+        </div>
+        <div class="trust-postcard reveal reveal--scale">
+          <div class="trust-postcard__icon"><img src="https://api.iconify.design/mdi/account-check-outline.svg?color=white" alt="Educators"></div>
+          <h3>Expert Educators</h3>
+          <p>Trained, experienced, and deeply caring.</p>
+        </div>
+        <div class="trust-postcard reveal reveal--scale">
+          <div class="trust-postcard__icon"><img src="https://api.iconify.design/mdi/shield-check-outline.svg?color=white" alt="Safety"></div>
+          <h3>Safe & Secure</h3>
+          <p>CCTV, fob entry, and safeguarding-first.</p>
+        </div>
+        <div class="trust-postcard reveal reveal--scale">
+          <div class="trust-postcard__icon"><img src="https://api.iconify.design/mdi/food-apple-outline.svg?color=white" alt="Meals"></div>
+          <h3>Healthy Meals</h3>
+          <p>Fresh, nutritious food cooked on-site.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: ACTIVITIES SHOWCASE -->
+  <section class="activities" id="activities">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <h2 class="headline-md reveal reveal--up">Activities Showcase</h2>
+      </div>
+
+      <div class="activities__grid stagger">
+        <!-- Creative Arts -->
+        <div class="activity-item reveal reveal--scale">
+          <div class="activity-flip">
+            <div class="activity-flip__inner">
+              <div class="activity-flip__front activity-blob-1">
+                <img src="assets/images/activity-creative-arts.png" alt="Creative Arts">
+              </div>
+              <div class="activity-flip__back activity-blob-1 bg-orange">
+                <p>From finger-painting to collage, our creative arts programme develops fine motor skills, self-expression and confidence through guided and free-form artistic exploration.</p>
+              </div>
+            </div>
+          </div>
+          <span class="activity-item__label text-orange">Creative Arts</span>
+        </div>
+
+        <!-- Sensory Play -->
+        <div class="activity-item reveal reveal--scale">
+          <div class="activity-flip">
+            <div class="activity-flip__inner">
+              <div class="activity-flip__front activity-blob-2">
+                <img src="assets/images/activity-sensory-play.png" alt="Sensory Play">
+              </div>
+              <div class="activity-flip__back activity-blob-2 bg-lime">
+                <p>Water, sand, playdough and textured materials stimulate curiosity and cognitive development. Our sensory stations are designed to engage all five senses in a safe, structured environment.</p>
+              </div>
+            </div>
+          </div>
+          <span class="activity-item__label text-lime">Sensory Play</span>
+        </div>
+
+        <!-- Outdoor Adventures -->
+        <div class="activity-item reveal reveal--scale">
+          <div class="activity-flip">
+            <div class="activity-flip__inner">
+              <div class="activity-flip__front activity-blob-3">
+                <img src="assets/images/activity-outdoor-adventures.png" alt="Outdoor Adventures">
+              </div>
+              <div class="activity-flip__back activity-blob-3 bg-teal">
+                <p>From climbing frames to nature trails, our outdoor programme builds physical resilience, teamwork and a love of the natural world — rain or shine.</p>
+              </div>
+            </div>
+          </div>
+          <span class="activity-item__label text-teal">Outdoor Adventures</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: TESTIMONIALS (Carousel) -->
+  <section class="testimonials-carousel" id="testimonials">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <h2 class="headline-md text-white reveal reveal--up">What Parents Say</h2>
+      </div>
+
+      <div class="testi-carousel" id="testiCarousel">
+        <div class="testi-slide active">
+          <div class="testi-quote-mark">"</div>
+          <p class="testi-quote">Our daughter has blossomed since joining Destiny Kids. The staff genuinely care, and we see new milestones every single week.</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background: var(--secondary);">SL</div>
+            <div><div class="testi-name">Sarah L.</div><div class="testi-role">Parent of Amara, aged 2</div></div>
+          </div>
+        </div>
+        <div class="testi-slide">
+          <div class="testi-quote-mark">"</div>
+          <p class="testi-quote">The best decision we ever made. The outdoor programme is incredible. Our son comes home absolutely buzzing with stories.</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background: var(--primary);">MT</div>
+            <div><div class="testi-name">Mark T.</div><div class="testi-role">Parent of Leo, aged 3</div></div>
+          </div>
+        </div>
+        <div class="testi-slide">
+          <div class="testi-quote-mark">"</div>
+          <p class="testi-quote">As a first-time mum, the transition was nerve-wracking. But the team made it seamless. I felt supported from day one.</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background: var(--tertiary);">PN</div>
+            <div><div class="testi-name">Priya N.</div><div class="testi-role">Parent of Kian, aged 1</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-dots">
+        <span class="testi-dot active" data-slide="0"></span>
+        <span class="testi-dot" data-slide="1"></span>
+        <span class="testi-dot" data-slide="2"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAY IN THE LOOP — Compact Ribbon -->
+  <section class="loop-section" id="newsletter">
+    <div class="container">
+      <div class="loop-ribbon reveal reveal--up">
+        <div class="loop-text">
+          <h2>Stay in the Loop</h2>
+          <p>Events, activities, term dates & more.</p>
+        </div>
+        <form class="loop-form" id="newsletterForm">
+          <input type="email" class="loop-input" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" class="loop-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/images/logo.png" alt="Destiny Kids Logo" class="footer__logo">
+          <div class="footer__brand-name">Destiny Kids Nursery</div>
+          <div class="footer__tagline">Destined for Greatness</div>
+          <p class="footer__description">Providing quality childcare and early years education across South London since 2011.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="about.html" class="footer__link">About Us</a>
+          <a href="registration.html" class="footer__link">Registration</a>
+          <a href="noticeboard.html" class="footer__link">Noticeboard</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Our Branches</h4>
+          <p class="footer__link"><strong>Brixton Hill</strong></p>
+          <p class="footer__link">228 Brixton Hill, SW2 1HE</p>
+          <p class="footer__link">020 8674 1693</p>
+          <p class="footer__link" style="margin-bottom: var(--space-md);">brixtonhill@destinykidsnursery.com</p>
+          <p class="footer__link"><strong>Battersea</strong></p>
+          <p class="footer__link">Methodist Mission, SW11 3QA</p>
+          <p class="footer__link">07727 972 642</p>
+          <p class="footer__link">info@destinykidsnursery.com</p>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Connect</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="TikTok"><img src="https://api.iconify.design/ri/tiktok-fill.svg?color=white" alt="TikTok" width="18"></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><img src="https://api.iconify.design/ri/facebook-fill.svg?color=white" alt="Facebook" width="18"></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><img src="https://api.iconify.design/ri/instagram-fill.svg?color=white" alt="Instagram" width="18"></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><img src="https://api.iconify.design/ri/youtube-fill.svg?color=white" alt="YouTube" width="18"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2026 Destiny Kids Nursery. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <span>Ofsted Approved &middot; DBS Checked</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

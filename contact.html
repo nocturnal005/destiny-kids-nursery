@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Destiny Kids Nursery</title>
+  <meta name="description" content="Get in touch with Destiny Kids Nursery. Visit our branches in Battersea and Brixton Hill, or send us a message.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css?v=2">
+  <link rel="stylesheet" href="css/tokens.css?v=2">
+  <link rel="stylesheet" href="css/global.css?v=2">
+  <link rel="stylesheet" href="css/animations.css?v=2">
+  <link rel="stylesheet" href="css/components.css?v=2">
+  <link rel="stylesheet" href="css/contact.css?v=1">
+</head>
+<body>
+
+  <!-- ═══════ NAVIGATION ═══════ -->
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav__brand">
+      <img src="assets/images/logo.png" alt="Destiny Kids Logo" class="nav__logo">
+      Destiny Kids
+    </a>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="registration.html" class="nav__link">Registration</a>
+      <a href="noticeboard.html" class="nav__link">Noticeboard</a>
+      <a href="contact.html" class="nav__link nav__link--active">Contact</a>
+    </div>
+    <a href="contact.html" class="btn btn--lime nav__cta">Enquire Now</a>
+    <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav__mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav__link">Home</a>
+    <a href="about.html" class="nav__link">About</a>
+    <a href="registration.html" class="nav__link">Registration</a>
+    <a href="noticeboard.html" class="nav__link">Noticeboard</a>
+    <a href="contact.html" class="nav__link nav__link--active">Contact</a>
+    <a href="contact.html" class="btn btn--lime btn--lg">Enquire Now</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HERO — Immersive Split Screen
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="cb-hero" id="contactHero">
+    <div class="cb-hero__left">
+      <span class="cb-hero__badge">✉️ Contact Us</span>
+      <h1 class="cb-hero__title">Let's Start a<br><span>Conversation</span></h1>
+      <p class="cb-hero__desc">Whether you're looking for a nursery place, want to book a tour, or just have a question — we're always happy to chat.</p>
+      <div class="cb-hero__quick-contacts">
+        <a href="tel:02079846594" class="cb-hero__quick">
+          <img src="https://api.iconify.design/mdi/phone.svg?color=%23fff" alt="" width="18">
+          <span>020 7984 6594</span>
+        </a>
+        <a href="mailto:info@destinykidsnursery.com" class="cb-hero__quick">
+          <img src="https://api.iconify.design/mdi/email.svg?color=%23fff" alt="" width="18">
+          <span>info@destinykidsnursery.com</span>
+        </a>
+      </div>
+    </div>
+    <div class="cb-hero__right">
+      <img src="assets/images/contact-hero.png" alt="Diverse children learning and playing at Destiny Kids Nursery" class="cb-hero__image">
+      <div class="cb-hero__overlay"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       3-COLUMN CARDS — Form + 2 branches
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="cb-cards" id="contactCards">
+    <h2 class="cb-cards__heading">How Can We Help?</h2>
+    <p class="cb-cards__subheading">Choose a branch or drop us a message — we'd love to hear from you.</p>
+
+    <div class="cb-cards__grid">
+
+      <!-- Branch 1: Battersea -->
+      <div class="cb-branch reveal reveal--up" id="branchBattersea">
+        <div class="cb-branch__accent cb-branch__accent--teal"></div>
+        <div class="cb-branch__icon-wrap cb-branch__icon-wrap--teal">
+          <img src="https://api.iconify.design/mdi/map-marker.svg?color=%23fff" alt="" width="28">
+        </div>
+        <h3 class="cb-branch__name">Battersea</h3>
+        <p class="cb-branch__subtitle">Central Methodist Mission</p>
+        <div class="cb-branch__details">
+          <div class="cb-branch__row">
+            <img src="https://api.iconify.design/mdi/map-marker-outline.svg?color=%232ABFBF" alt="" width="18">
+            <span>Third Floor, 20-22 York Road,<br>Battersea, SW11 3QA</span>
+          </div>
+          <div class="cb-branch__row">
+            <img src="https://api.iconify.design/mdi/phone-outline.svg?color=%232ABFBF" alt="" width="18">
+            <span>020 7984 6594 / 07727 972 642</span>
+          </div>
+          <div class="cb-branch__row">
+            <img src="https://api.iconify.design/mdi/email-outline.svg?color=%232ABFBF" alt="" width="18">
+            <a href="mailto:battersea@destinykidsnursery.com">battersea@destinykidsnursery.com</a>
+          </div>
+          <div class="cb-branch__row">
+            <img src="https://api.iconify.design/mdi/clock-outline.svg?color=%232ABFBF" alt="" width="18">
+            <span>Mon–Fri: 7:30am – 6:30pm</span>
+          </div>
+        </div>
+        <a href="#contactForm" class="cb-branch__cta cb-branch__cta--teal">Message This Branch →</a>
+      </div>
+
+      <!-- Contact Form (Centre) -->
+      <div class="cb-form-card reveal reveal--up" id="contactFormCard">
+        <div class="cb-form-card__header">
+          <div class="cb-form-card__icon">
+            <img src="https://api.iconify.design/mdi/message-text-outline.svg?color=%23fff" alt="" width="28">
+          </div>
+          <h3>Send a Message</h3>
+          <p>We'll reply within 24 hours.</p>
+        </div>
+        <form class="cb-form" id="contactForm">
+          <input type="text" class="cb-form__input" placeholder="Full Name *" required>
+          <input type="email" class="cb-form__input" placeholder="Email Address *" required>
+          <input type="tel" class="cb-form__input" placeholder="Phone Number">
+          <select class="cb-form__input cb-form__select">
+            <option value="" disabled selected>Subject…</option>
+            <option value="enrolment">Enrolment Enquiry</option>
+            <option value="tour">Book a Tour</option>
+            <option value="fees">Fees & Funding</option>
+            <option value="general">General Question</option>
+            <option value="other">Other</option>
+          </select>
+          <textarea class="cb-form__input cb-form__textarea" placeholder="Your message…" rows="4" required></textarea>
+          <button type="submit" class="cb-form__submit" id="contactSubmitBtn">
+            <span>Send Message</span>
+            <img src="https://api.iconify.design/mdi/send.svg?color=%236f3800" alt="" width="16">
+          </button>
+        </form>
+      </div>
+
+      <!-- Branch 2: Brixton Hill -->
+      <div class="cb-branch reveal reveal--up" id="branchBrixton">
+        <div class="cb-branch__accent cb-branch__accent--orange"></div>
+        <div class="cb-branch__icon-wrap cb-branch__icon-wrap--orange">
+          <img src="https://api.iconify.design/mdi/map-marker.svg?color=%23fff" alt="" width="28">
+        </div>
+        <h3 class="cb-branch__name">Brixton Hill</h3>
+        <p class="cb-branch__subtitle">Our Flagship Branch</p>
+        <div class="cb-branch__details">
+          <div class="cb-branch__row">
+            <img src="https://api.iconify.design/mdi/map-marker-outline.svg?color=%23FF8A3D" alt="" width="18">
+            <span>228 Brixton Hill,<br>London, SW2 1HE</span>
+          </div>
+          <div class="cb-branch__row">
+            <img src="https://api.iconify.design/mdi/phone-outline.svg?color=%23FF8A3D" alt="" width="18">
+            <span>020 8674 1693</span>
+          </div>
+          <div class="cb-branch__row">
+            <img src="https://api.iconify.design/mdi/email-outline.svg?color=%23FF8A3D" alt="" width="18">
+            <a href="mailto:brixtonhill@destinykidsnursery.com">brixtonhill@destinykidsnursery.com</a>
+          </div>
+          <div class="cb-branch__row">
+            <img src="https://api.iconify.design/mdi/clock-outline.svg?color=%23FF8A3D" alt="" width="18">
+            <span>Mon–Fri: 7:30am – 6:30pm</span>
+          </div>
+        </div>
+        <a href="#contactForm" class="cb-branch__cta cb-branch__cta--orange">Message This Branch →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       MAP — Full width with rounded container
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="cb-map-section" id="contactMap">
+    <div class="cb-map-wrap">
+      <div class="cb-map-label">
+        <img src="https://api.iconify.design/mdi/map-search-outline.svg?color=%232ABFBF" alt="" width="22">
+        <span>Find Us in South London</span>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39738.98!2d-0.1278!3d51.4620!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760567da220a01%3A0x31911b371c692e86!2sLondon%20SW2%201HE!5e0!3m2!1sen!2suk!4v1680000000000"
+        width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="Find Destiny Kids Nursery on Google Maps">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FAQ — Accordion style
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="cb-faq" id="contactFaq">
+    <div class="cb-faq__inner">
+      <div class="cb-faq__header">
+        <h2>Common Questions</h2>
+        <p>Everything you need to know before your first visit.</p>
+      </div>
+      <div class="cb-faq__list">
+        <details class="cb-faq__item" open>
+          <summary class="cb-faq__q">
+            <span>🕐</span> What are your opening hours?
+            <img src="https://api.iconify.design/mdi/chevron-down.svg?color=%238e8a84" alt="" width="22" class="cb-faq__chevron">
+          </summary>
+          <p class="cb-faq__a">Both branches are open Monday to Friday, 7:30am to 6:30pm, 51 weeks of the year (closed on public holidays and between Christmas and New Year).</p>
+        </details>
+        <details class="cb-faq__item">
+          <summary class="cb-faq__q">
+            <span>👶</span> What ages do you accept?
+            <img src="https://api.iconify.design/mdi/chevron-down.svg?color=%238e8a84" alt="" width="22" class="cb-faq__chevron">
+          </summary>
+          <p class="cb-faq__a">We welcome children from 3 months to 4 years old across three dedicated rooms: Babies, Toddlers, and Pre-School.</p>
+        </details>
+        <details class="cb-faq__item">
+          <summary class="cb-faq__q">
+            <span>🎟️</span> How do I book a tour?
+            <img src="https://api.iconify.design/mdi/chevron-down.svg?color=%238e8a84" alt="" width="22" class="cb-faq__chevron">
+          </summary>
+          <p class="cb-faq__a">Use 'Book a Tour' in the contact form above, call either branch, or email us — we offer tours on weekdays at flexible times.</p>
+        </details>
+        <details class="cb-faq__item">
+          <summary class="cb-faq__q">
+            <span>💷</span> Do you accept government funding?
+            <img src="https://api.iconify.design/mdi/chevron-down.svg?color=%238e8a84" alt="" width="22" class="cb-faq__chevron">
+          </summary>
+          <p class="cb-faq__a">Yes! We accept 15 and 30 hours free childcare, childcare vouchers, and tax-free childcare.</p>
+        </details>
+        <details class="cb-faq__item">
+          <summary class="cb-faq__q">
+            <span>🍎</span> Are meals and snacks included?
+            <img src="https://api.iconify.design/mdi/chevron-down.svg?color=%238e8a84" alt="" width="22" class="cb-faq__chevron">
+          </summary>
+          <p class="cb-faq__a">All meals and healthy snacks are freshly prepared on-site and included in our fees. We cater for dietary requirements and allergies.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CTA Ribbon ═══════ -->
+  <section class="cb-cta" id="contactCta">
+    <div class="cb-cta__ribbon">
+      <h2>Ready to Visit?</h2>
+      <p>Schedule a tour and see why families across South London trust us with their little ones.</p>
+      <a href="registration.html" class="cb-cta__btn">Book a Tour →</a>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/images/logo.png" alt="Destiny Kids Logo" class="footer__logo">
+          <div class="footer__brand-name">Destiny Kids Nursery</div>
+          <div class="footer__tagline">Destined for Greatness</div>
+          <p class="footer__description">Providing quality childcare and early years education across South London since 2011.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="about.html" class="footer__link">About Us</a>
+          <a href="registration.html" class="footer__link">Registration</a>
+          <a href="noticeboard.html" class="footer__link">Noticeboard</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Our Branches</h4>
+          <p class="footer__link"><strong>Brixton Hill</strong></p>
+          <p class="footer__link">228 Brixton Hill, SW2 1HE</p>
+          <p class="footer__link">020 8674 1693</p>
+          <p class="footer__link" style="margin-bottom: var(--space-md);">brixtonhill@destinykidsnursery.com</p>
+          <p class="footer__link"><strong>Battersea</strong></p>
+          <p class="footer__link">Methodist Mission, SW11 3QA</p>
+          <p class="footer__link">07727 972 642</p>
+          <p class="footer__link">info@destinykidsnursery.com</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Connect</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="TikTok"><img src="https://api.iconify.design/ri/tiktok-fill.svg?color=white" alt="TikTok" width="18"></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><img src="https://api.iconify.design/ri/facebook-fill.svg?color=white" alt="Facebook" width="18"></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><img src="https://api.iconify.design/ri/instagram-fill.svg?color=white" alt="Instagram" width="18"></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><img src="https://api.iconify.design/ri/youtube-fill.svg?color=white" alt="YouTube" width="18"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Destiny Kids Nursery. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <span>Ofsted Approved &middot; DBS Checked</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = document.getElementById('contactSubmitBtn');
+        btn.innerHTML = '<span>Sent! ✓</span>';
+        btn.style.background = 'var(--primary)';
+        btn.style.color = '#fff';
+        btn.disabled = true;
+        setTimeout(() => { btn.innerHTML = '<span>Send Message</span><img src="https://api.iconify.design/mdi/send.svg?color=%236f3800" alt="" width="16">'; btn.style.background = ''; btn.style.color = ''; btn.disabled = false; contactForm.reset(); }, 3000);
+      });
+    }
+  </script>
+</body>
+</html>

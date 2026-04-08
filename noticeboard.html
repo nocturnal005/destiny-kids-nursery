@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticeboard — Destiny Kids Nursery</title>
+  <meta name="description" content="Stay up to date with the latest news, events, and updates from Destiny Kids Nursery. Read about our programmes, community activities, and parenting tips.">
+  <meta property="og:title" content="Noticeboard — Destiny Kids Nursery">
+  <meta property="og:description" content="News, events, and updates from Destiny Kids Nursery in Brixton Hill and Battersea.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css?v=2">
+  <link rel="stylesheet" href="css/tokens.css?v=2">
+  <link rel="stylesheet" href="css/global.css?v=2">
+  <link rel="stylesheet" href="css/animations.css?v=2">
+  <link rel="stylesheet" href="css/components.css?v=2">
+  <link rel="stylesheet" href="css/noticeboard.css?v=2">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       NAVIGATION — Matching site-wide header
+       ═══════════════════════════════════════════════════════════════ -->
+  <nav class="nav" id="mainNav">
+    <a href="index.html" class="nav__brand">
+      <img src="assets/images/logo.png" alt="Destiny Kids Logo" class="nav__logo">
+      Destiny Kids
+    </a>
+
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="registration.html" class="nav__link">Registration</a>
+      <a href="noticeboard.html" class="nav__link nav__link--active">Noticeboard</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+    </div>
+
+    <a href="contact.html" class="btn btn--lime nav__cta">Enquire Now</a>
+
+    <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile-menu" id="mobileMenu">
+    <a href="index.html" class="nav__link">Home</a>
+    <a href="about.html" class="nav__link">About</a>
+    <a href="registration.html" class="nav__link">Registration</a>
+    <a href="noticeboard.html" class="nav__link nav__link--active">Noticeboard</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="contact.html" class="btn btn--lime btn--lg">Enquire Now</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HERO — Teal editorial with stats
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="nba-hero" id="noticeboardHero">
+    <div class="nba-hero__circle nba-hero__circle--1"></div>
+    <div class="nba-hero__circle nba-hero__circle--2"></div>
+    <div class="nba-hero__circle nba-hero__circle--3"></div>
+    <div class="nba-hero__inner">
+      <div class="nba-hero__text">
+        <span class="nba-hero__label">📢 Destiny Kids Nursery</span>
+        <h1 class="nba-hero__title">The<br><em>Noticeboard</em></h1>
+        <p class="nba-hero__desc">Your go-to hub for nursery news, events, parenting tips, and community stories.</p>
+      </div>
+      <div class="nba-hero__stats">
+        <div class="nba-hero__stat">
+          <span class="nba-hero__stat-num">25</span>
+          <span class="nba-hero__stat-label">Articles</span>
+        </div>
+        <div class="nba-hero__stat">
+          <span class="nba-hero__stat-num">6</span>
+          <span class="nba-hero__stat-label">This Month</span>
+        </div>
+        <div class="nba-hero__stat">
+          <span class="nba-hero__stat-num">3</span>
+          <span class="nba-hero__stat-label">Events</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FEATURED ARTICLE — Large 2-col card
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="nba-featured" id="noticeboardFeatured">
+    <div class="nba-featured__card reveal reveal--up">
+      <img src="assets/images/noticeboard-hero.png" alt="Children engaged in sensory play at Destiny Kids Nursery" class="nba-featured__img">
+      <div class="nba-featured__body">
+        <span class="nba-featured__tag">📌 Pinned</span>
+        <h2 class="nba-featured__title">Future Explorers: Sensory Play in the Atrium</h2>
+        <p class="nba-featured__excerpt">Our new sensory play programme launches this term — discover how hands-on exploration helps children develop critical thinking and creative skills in a safe, nurturing environment.</p>
+        <div class="nba-featured__meta">
+          <span>📅 5 April 2026</span>
+          <span>⏱ 3 min read</span>
+        </div>
+        <a href="#" class="nba-featured__readmore">Read More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       CONTENT — 2-col grid + sidebar
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="nba-content" id="noticeboardGrid">
+    <main class="nba-main">
+      <div class="nba-main__header">
+        <h2 class="nba-main__title">Latest Updates</h2>
+      </div>
+      <div class="nba-main__grid">
+
+        <!-- Photo article — Water Play & Emotional Consistency -->
+        <article class="nba-article reveal reveal--up" id="article-waterplay">
+          <a href="article-waterplay.html" style="text-decoration:none; color:inherit; display:contents;">
+          <img src="assets/images/noticeboard-waterplay.png" alt="Diverse toddlers happily playing at water play stations" class="nba-article__img">
+          <div class="nba-article__body">
+            <span class="nba-article__tag nba-article__tag--news">Research</span>
+            <h3 class="nba-article__title">Water Play as a Vehicle for Emotional Consistency</h3>
+            <p class="nba-article__excerpt">A growing body of peer-reviewed research points to structured water play as an effective intervention for supporting emotional regulation in young children.</p>
+            <div class="nba-article__meta">
+              <span class="nba-article__author">Destiny Kids Nursery</span>
+              <span class="nba-article__date">12 April 2026</span>
+            </div>
+          </div>
+          </a>
+        </article>
+
+        <!-- Photo article — Sensory play -->
+        <article class="nba-article reveal reveal--up" id="article-sensory">
+          <img src="assets/images/noticeboard-sensory.png" alt="Toddler enjoying sensory play with playdough" class="nba-article__img">
+          <div class="nba-article__body">
+            <span class="nba-article__tag nba-article__tag--news">News</span>
+            <h3 class="nba-article__title">Sensory Play: New Activities This Term</h3>
+            <p class="nba-article__excerpt">Exciting new textures, materials, and sensory stations coming to all age groups this spring.</p>
+            <div class="nba-article__date">5 April 2026</div>
+          </div>
+        </article>
+
+        <!-- Teal colored card — Tips -->
+        <article class="nba-article nba-article--color nba-article--teal reveal reveal--up" id="article-creativity">
+          <span class="nba-article__tag">Tips</span>
+          <h3 class="nba-article__title">Nurturing Creativity: Tips for Home</h3>
+          <p class="nba-article__excerpt">Simple, screen-free activity ideas to inspire your little one's imagination at home.</p>
+          <div class="nba-article__date">28 March 2026</div>
+        </article>
+
+        <!-- Photo article — Workshop -->
+        <article class="nba-article reveal reveal--up" id="article-workshop">
+          <img src="assets/images/noticeboard-painting.png" alt="Child painting with watercolors at nursery" class="nba-article__img">
+          <div class="nba-article__body">
+            <span class="nba-article__tag nba-article__tag--event">Event</span>
+            <h3 class="nba-article__title">Art & Expression Workshop: Enrolment Open</h3>
+            <p class="nba-article__excerpt">A new after-hours creative workshop for 3–4 year olds every Wednesday afternoon.</p>
+            <div class="nba-article__date">2 April 2026</div>
+          </div>
+        </article>
+
+        <!-- Orange colored card — Community -->
+        <article class="nba-article nba-article--color nba-article--orange reveal reveal--up" id="article-fete">
+          <span class="nba-article__tag">Community</span>
+          <h3 class="nba-article__title">Spring Fête: Save the Date!</h3>
+          <p class="nba-article__excerpt">Our biggest community event of the year is back — fun, food, and activities for all the family.</p>
+          <div class="nba-article__date">18 March 2026</div>
+        </article>
+
+        <!-- Photo article — Learning -->
+        <article class="nba-article reveal reveal--up" id="article-blocks">
+          <img src="assets/images/noticeboard-blocks.png" alt="Colorful building blocks at nursery" class="nba-article__img">
+          <div class="nba-article__body">
+            <span class="nba-article__tag nba-article__tag--tips">Learning</span>
+            <h3 class="nba-article__title">Learning Through Play: The Importance of Modular Toys</h3>
+            <p class="nba-article__excerpt">Why open-ended toys are the building blocks of problem-solving and spatial reasoning.</p>
+            <div class="nba-article__date">15 March 2026</div>
+          </div>
+        </article>
+
+        <!-- Amber colored card — Notice -->
+        <article class="nba-article nba-article--color nba-article--amber reveal reveal--up" id="article-term-dates">
+          <span class="nba-article__tag">Notice</span>
+          <h3 class="nba-article__title">Summer Term Dates 2026</h3>
+          <p class="nba-article__excerpt">Starts Mon 20 April. Half-term: 25–29 May. Ends Fri 17 July.</p>
+          <div class="nba-article__date">10 March 2026</div>
+        </article>
+
+      </div>
+    </main>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         SIDEBAR — Search, categories, recent posts, quick links, newsletter
+         ═══════════════════════════════════════════════════════════════ -->
+    <aside class="nba-sidebar">
+      <div class="nba-sidebar__section">
+        <h3 class="nba-sidebar__heading">Search</h3>
+        <div class="nba-search">
+          <img src="https://api.iconify.design/mdi/magnify.svg?color=%23999" alt="Search" class="nba-search__icon">
+          <input type="text" class="nba-search__input" placeholder="Search updates..." id="nbSearch">
+        </div>
+      </div>
+
+      <div class="nba-sidebar__section">
+        <h3 class="nba-sidebar__heading">Categories</h3>
+        <div class="nba-categories">
+          <button class="nba-cat-pill active">All</button>
+          <button class="nba-cat-pill">News</button>
+          <button class="nba-cat-pill">Events</button>
+          <button class="nba-cat-pill">Tips</button>
+          <button class="nba-cat-pill">Community</button>
+          <button class="nba-cat-pill">Notices</button>
+        </div>
+      </div>
+
+      <div class="nba-sidebar__section">
+        <h3 class="nba-sidebar__heading">Recent Posts</h3>
+        <ul class="nba-recent">
+          <li><a href="article-waterplay.html">Water Play & Emotional Consistency <span class="nba-recent__date">12 Apr 2026</span></a></li>
+          <li><a href="#article-sensory">Sensory Play: New Activities This Term <span class="nba-recent__date">5 Apr 2026</span></a></li>
+          <li><a href="#article-workshop">Art & Expression Workshop Opens <span class="nba-recent__date">2 Apr 2026</span></a></li>
+          <li><a href="#article-creativity">Nurturing Creativity at Home <span class="nba-recent__date">28 Mar 2026</span></a></li>
+          <li><a href="#article-fete">Spring Fête Announced <span class="nba-recent__date">18 Mar 2026</span></a></li>
+        </ul>
+      </div>
+
+      <div class="nba-sidebar__section">
+        <div class="nba-quicklinks">
+          <h4>🔗 Quick Links</h4>
+          <a href="registration.html">→ Register your child</a>
+          <a href="contact.html">→ Contact us</a>
+          <a href="about.html">→ About our approach</a>
+        </div>
+      </div>
+
+      <div class="nba-sidebar__section">
+        <div class="nba-newsletter">
+          <h4>📮 Stay in the Loop</h4>
+          <p>News and tips straight to your inbox.</p>
+          <form class="nba-newsletter__form" id="nbNewsletter">
+            <input type="email" class="nba-newsletter__input" placeholder="Your email" required aria-label="Email address">
+            <button type="submit" class="nba-newsletter__btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER — Shared site footer
+       ═══════════════════════════════════════════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/images/logo.png" alt="Destiny Kids Logo" class="footer__logo">
+          <div class="footer__brand-name">Destiny Kids Nursery</div>
+          <div class="footer__tagline">Destined for Greatness</div>
+          <p class="footer__description">Providing quality childcare and early years education across South London since 2011.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="about.html" class="footer__link">About Us</a>
+          <a href="registration.html" class="footer__link">Registration</a>
+          <a href="noticeboard.html" class="footer__link">Noticeboard</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Our Branches</h4>
+          <p class="footer__link"><strong>Brixton Hill</strong></p>
+          <p class="footer__link">228 Brixton Hill, SW2 1HE</p>
+          <p class="footer__link">020 8674 1693</p>
+          <p class="footer__link" style="margin-bottom: var(--space-md);">brixtonhill@destinykidsnursery.com</p>
+          <p class="footer__link"><strong>Battersea</strong></p>
+          <p class="footer__link">Methodist Mission, SW11 3QA</p>
+          <p class="footer__link">07727 972 642</p>
+          <p class="footer__link">info@destinykidsnursery.com</p>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Connect</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="TikTok"><img src="https://api.iconify.design/ri/tiktok-fill.svg?color=white" alt="TikTok" width="18"></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><img src="https://api.iconify.design/ri/facebook-fill.svg?color=white" alt="Facebook" width="18"></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><img src="https://api.iconify.design/ri/instagram-fill.svg?color=white" alt="Instagram" width="18"></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><img src="https://api.iconify.design/ri/youtube-fill.svg?color=white" alt="YouTube" width="18"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2026 Destiny Kids Nursery. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <span>Ofsted Approved &middot; DBS Checked</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

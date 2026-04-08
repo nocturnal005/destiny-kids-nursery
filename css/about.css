@@ -1,0 +1,847 @@
+/* ── About Page Styles ──────────────────────────────────────────────────
+   Destiny Kids Nursery — About Us
+   Design: Editorial Organicism with fluid blobs, winding timeline,
+   trust pills, EYFS pebbles, and teal-wave testimonials.
+─────────────────────────────────────────────────────────────────────── */
+
+/* ═══════════════════════════════════════════════════════════════════════
+   HERO — Full-bleed with decorative organic blob overlays
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.about-hero {
+  position: relative;
+  min-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: var(--surface);
+}
+
+.about-hero__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  z-index: 0;
+}
+
+/* Gradient fade for text readability */
+.about-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to right,
+    rgba(253, 248, 243, 0.97) 0%,
+    rgba(253, 248, 243, 0.8) 35%,
+    transparent 60%);
+  pointer-events: none;
+}
+
+/* Decorative blobs */
+.about-hero__blob {
+  position: absolute;
+  z-index: 0;
+  border-radius: 50%;
+  opacity: 0.35;
+  pointer-events: none;
+}
+.about-hero__blob--teal {
+  width: 400px; height: 400px;
+  background: var(--primary);
+  top: -100px; right: -80px;
+  border-radius: 54% 46% 62% 38% / 46% 62% 38% 54%;
+}
+.about-hero__blob--orange {
+  width: 260px; height: 260px;
+  background: var(--secondary);
+  bottom: -60px; left: 40%;
+  border-radius: 40% 60% 55% 45% / 55% 35% 65% 45%;
+}
+.about-hero__blob--lime {
+  width: 180px; height: 180px;
+  background: var(--tertiary);
+  top: 30%; right: 15%;
+  border-radius: 60% 40% 50% 50% / 40% 55% 45% 60%;
+}
+
+.about-hero__content {
+  position: relative;
+  z-index: 2;
+  padding-left: clamp(1.5rem, 5vw, 5rem);
+  max-width: 650px;
+}
+
+.about-hero__content h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5.5vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--primary);
+  margin-bottom: var(--space-lg);
+}
+
+.about-hero__content p {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  color: var(--on-surface-variant);
+  line-height: 1.5;
+  margin-bottom: var(--space-xl);
+  max-width: 500px;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════════
+   OUR STORY — Winding Road Timeline (Variant A)
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.about-story {
+  padding-block: var(--space-6xl) var(--space-5xl);
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Interwoven Background Blobs */
+.story-blob {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.story-blob--teal {
+  width: 550px; height: 550px;
+  background: var(--primary);
+  top: -80px; left: -180px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  opacity: 0.18;
+  filter: blur(15px);
+}
+
+.story-blob--orange {
+  width: 480px; height: 480px;
+  background: var(--secondary);
+  top: 35%; right: -140px;
+  border-radius: 60% 40% 50% 50% / 40% 50% 50% 60%;
+  opacity: 0.2;
+  filter: blur(15px);
+}
+
+.story-blob--lime {
+  width: 350px; height: 350px;
+  background: var(--tertiary);
+  bottom: 5%; left: 8%;
+  border-radius: 50% 50% 30% 70% / 60% 40% 60% 40%;
+  opacity: 0.15;
+  filter: blur(15px);
+}
+
+.relative-z {
+  position: relative;
+  z-index: 2;
+}
+
+/* Header */
+.story-header {
+  margin-bottom: var(--space-4xl);
+}
+
+.story-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.8rem, 5.5vw, 4.2rem);
+  color: var(--on-surface);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+.story-subtitle {
+  color: var(--secondary);
+  font-weight: 800;
+  font-family: var(--font-heading);
+  letter-spacing: 3px;
+  font-size: 1rem;
+  margin-top: 0.75rem;
+  text-transform: uppercase;
+}
+
+/* The winding road container */
+.story-road {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* SVG winding path — behind everything */
+.story-road__svg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── Milestone Node ────────────────────────────────── */
+.story-milestone {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.story-milestone--left {
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-right: 15%;
+}
+
+.story-milestone--right {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  padding-left: 15%;
+}
+
+/* Even nodes shift right, odd shift left — creating zigzag */
+.story-milestone:nth-child(2n + 2) { /* nodes 2, 4, 6 — RIGHT */
+  margin-left: auto;
+}
+.story-milestone:nth-child(2n + 3) { /* nodes 3, 5, 7 — LEFT */
+  margin-right: auto;
+}
+
+/* ── Circular Photo Portal ────────────────────────── */
+.story-milestone__photo {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.story-milestone:hover .story-milestone__photo {
+  transform: scale(1.08);
+}
+
+.story-milestone__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-milestone__photo--teal { border-color: var(--primary); }
+.story-milestone__photo--orange { border-color: var(--secondary); }
+
+/* ── Dot (for nodes without photos) ───────────────── */
+.story-milestone__dot {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.story-milestone__dot::after {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.story-milestone__dot--teal { background: var(--primary); }
+.story-milestone__dot--orange { background: var(--secondary); }
+
+/* ── Milestone Card (pill-shaped) ─────────────────── */
+.story-milestone__card {
+  background: white;
+  border-radius: 60px;
+  padding: 1.5rem 2.25rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.05);
+  max-width: 420px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.story-milestone:hover .story-milestone__card {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.story-milestone__year {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--on-surface);
+  letter-spacing: -0.5px;
+  margin-bottom: 0.15rem;
+}
+
+.story-milestone__title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.story-milestone__title--teal { color: var(--primary); }
+.story-milestone__title--orange { color: var(--secondary); }
+
+.story-milestone__desc {
+  font-size: 0.92rem;
+  color: var(--on-surface-variant);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ── Responsive ───────────────────────────────────── */
+@media (max-width: 900px) {
+  .story-milestone {
+    flex-direction: column !important;
+    padding: 0 1rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .story-road__svg { display: none; }
+
+  .story-milestone__photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .story-milestone__card {
+    border-radius: 24px;
+    padding: 1.25rem 1.75rem;
+    text-align: center;
+  }
+
+  .story-milestone__dot {
+    width: 28px;
+    height: 28px;
+  }
+  .story-milestone__dot::after { inset: 6px; }
+}
+
+
+
+
+
+/* ═══════════════════════════════════════════════════════════════════════
+   MISSION & VALUES — Magazine Spread (Variant K)
+   Dark editorial layout, pull-quote mission, numbered value columns
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.mag-spread {
+  background: #1a1a2e;
+  border-radius: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* ── Hero area (mission pull-quote) ──────────────────────────────────── */
+.mag-hero {
+  position: relative;
+  padding: clamp(3rem, 6vw, 5rem) clamp(2rem, 5vw, 5rem) clamp(2rem, 4vw, 3.5rem);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Large decorative watermark behind everything */
+.mag-hero__watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(8rem, 18vw, 16rem);
+  font-weight: 700;
+  color: rgba(255,255,255,0.03);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+}
+
+/* Title */
+.mag-hero__title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  position: relative;
+  z-index: 2;
+}
+
+.mag-hero__title span {
+  color: var(--secondary);
+  font-style: italic;
+}
+
+/* Pull-quote block */
+.mag-hero__quote {
+  position: relative;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  z-index: 2;
+}
+
+.mag-hero__quote::before,
+.mag-hero__quote::after {
+  content: '\201C';
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--primary);
+  opacity: 0.6;
+  position: absolute;
+}
+
+.mag-hero__quote::before {
+  top: -0.6rem;
+  left: -0.5rem;
+}
+
+.mag-hero__quote::after {
+  content: '\201D';
+  bottom: -2rem;
+  right: 0;
+}
+
+.mag-hero__quote p {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  color: rgba(255,255,255,0.82);
+  line-height: 1.8;
+  font-style: italic;
+}
+
+/* ── Numbered Value Columns ──────────────────────────────────────────── */
+.mag-values {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.mag-card {
+  padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1rem, 2.5vw, 2rem);
+  border-right: 1px solid rgba(255,255,255,0.06);
+  text-align: center;
+  transition: background 0.35s ease;
+  position: relative;
+}
+
+.mag-card:last-child {
+  border-right: none;
+}
+
+.mag-card:hover {
+  background: rgba(255,255,255,0.04);
+}
+
+/* Big number */
+.mag-card__num {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
+.mag-card__num--teal  { color: var(--primary); }
+.mag-card__num--orange { color: var(--secondary); }
+.mag-card__num--lime  { color: var(--tertiary); }
+.mag-card__num--rose  { color: #F07A92; }
+
+/* Card text */
+.mag-card h4 {
+  font-family: var(--font-heading);
+  font-size: clamp(0.95rem, 1.3vw, 1.1rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+}
+
+.mag-card p {
+  font-size: clamp(0.82rem, 1vw, 0.92rem);
+  color: rgba(255,255,255,0.6);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Colour accent line at bottom */
+.mag-card__line {
+  width: 32px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 1.25rem auto 0;
+  opacity: 0.7;
+  transition: width 0.35s ease, opacity 0.35s ease;
+}
+
+.mag-card:hover .mag-card__line {
+  width: 56px;
+  opacity: 1;
+}
+
+.mag-card__line--teal  { background: var(--primary); }
+.mag-card__line--orange { background: var(--secondary); }
+.mag-card__line--lime  { background: var(--tertiary); }
+.mag-card__line--rose  { background: #F07A92; }
+
+/* ── Section wrapper reset — outer section is transparent, inner .mag-spread keeps dark bg ── */
+section.about-mission.mag-spread {
+  padding-block: 0;
+  margin-block: var(--space-xl) var(--space-2xl);
+}
+
+/* The .mag-spread itself is both the section and the dark container */
+.mag-spread {
+  background: #1a1a2e !important;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════════
+   MEET THE TEAM — Photo grid with blob masks
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.about-team {
+  padding-block: var(--space-5xl);
+  background: var(--surface);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2xl);
+  max-width: 1000px;
+  margin: var(--space-3xl) auto 0;
+  text-align: center;
+}
+
+.team-card__photo {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(107, 76, 154, 0.1);
+}
+
+.team-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-card__photo img {
+  transform: scale(1.08);
+}
+
+/* Blob mask shapes */
+.team-blob-1 { border-radius: 54% 46% 38% 62% / 46% 54% 46% 54%; }
+.team-blob-2 { border-radius: 60% 40% 64% 36% / 40% 61% 39% 60%; }
+.team-blob-3 { border-radius: 38% 62% 42% 58% / 54% 39% 61% 46%; }
+.team-blob-4 { border-radius: 50% 50% 33% 67% / 40% 60% 40% 60%; }
+
+.team-card__name {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.team-card__role {
+  font-size: var(--body-md-size);
+  color: var(--on-surface-variant);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════════
+   EYFS FRAMEWORK — Orbital Constellation
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.eyfs-orbit {
+  padding-block: var(--space-5xl);
+  background: var(--surface-container-low);
+  overflow: hidden;
+}
+
+.eyfs-orbit__header {
+  text-align: center;
+  padding-inline: 1rem;
+}
+
+.orbit-system {
+  position: relative;
+  width: min(600px, 85vw);
+  height: min(600px, 85vw);
+  margin: 3rem auto 0;
+}
+
+/* Center sun */
+.orbit-sun {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px; height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a1a2e, #2d2b55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  z-index: 10;
+  box-shadow: 0 0 60px rgba(26,26,46,0.3);
+}
+.orbit-sun span {
+  font-family: var(--font-accent, 'DM Serif Display', serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.orbit-sun small {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+/* Orbit rings */
+.orbit-ring {
+  position: absolute;
+  top: 50%; left: 50%;
+  border: 1.5px dashed rgba(0,0,0,0.08);
+  border-radius: 50%;
+  animation: orbitSpin 60s linear infinite;
+}
+.orbit-ring--inner {
+  width: 320px; height: 320px;
+  margin: -160px 0 0 -160px;
+}
+.orbit-ring--outer {
+  width: 480px; height: 480px;
+  margin: -240px 0 0 -240px;
+  animation-direction: reverse;
+  animation-duration: 80s;
+}
+
+@keyframes orbitSpin {
+  to { transform: rotate(360deg); }
+}
+
+/* Planet nodes */
+.orbit-planet {
+  position: absolute;
+  width: 90px; height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: white;
+  cursor: default;
+  transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.3s ease;
+  animation: counterSpin 60s linear infinite;
+  line-height: 1.2;
+  padding: 8px;
+}
+.orbit-ring--outer .orbit-planet {
+  animation-duration: 80s;
+  animation-direction: reverse;
+}
+.orbit-planet:hover {
+  transform: scale(1.2);
+  z-index: 20;
+}
+
+@keyframes counterSpin {
+  to { transform: rotate(-360deg); }
+}
+
+/* Positioning planets on inner ring (3 items) */
+.orbit-ring--inner .orbit-planet:nth-child(1) { top: -45px; left: 50%; margin-left: -45px; }
+.orbit-ring--inner .orbit-planet:nth-child(2) { bottom: 10px; left: -20px; }
+.orbit-ring--inner .orbit-planet:nth-child(3) { bottom: 10px; right: -20px; }
+
+/* Positioning planets on outer ring (4 items) */
+.orbit-ring--outer .orbit-planet:nth-child(1) { top: -45px; left: 50%; margin-left: -45px; }
+.orbit-ring--outer .orbit-planet:nth-child(2) { top: 50%; right: -45px; margin-top: -45px; }
+.orbit-ring--outer .orbit-planet:nth-child(3) { bottom: -45px; left: 50%; margin-left: -45px; }
+.orbit-ring--outer .orbit-planet:nth-child(4) { top: 50%; left: -45px; margin-top: -45px; }
+
+/* Planet colours */
+.planet--comm     { background: linear-gradient(135deg, #33CCCC, #1fa5a5); box-shadow: 0 6px 20px rgba(51,204,204,0.3); }
+.planet--personal { background: linear-gradient(135deg, #FF9A4D, #e07a2e); box-shadow: 0 6px 20px rgba(255,154,77,0.3); }
+.planet--physical { background: linear-gradient(135deg, #B5D94A, #8cb82b); box-shadow: 0 6px 20px rgba(181,217,74,0.3); color: var(--on-surface); }
+.planet--literacy { background: linear-gradient(135deg, #F07A92, #d55b73); box-shadow: 0 6px 20px rgba(240,122,146,0.3); }
+.planet--maths    { background: linear-gradient(135deg, #7B68EE, #5a47d6); box-shadow: 0 6px 20px rgba(123,104,238,0.3); }
+.planet--world    { background: linear-gradient(135deg, #FF9A4D, #cc7a3a); box-shadow: 0 6px 20px rgba(255,154,77,0.3); }
+.planet--arts     { background: linear-gradient(135deg, #B5D94A, #95b82e); box-shadow: 0 6px 20px rgba(181,217,74,0.3); color: var(--on-surface); }
+
+
+/* ═══════════════════════════════════════════════════════════════════════
+   TWO BRANCHES, ONE FAMILY — Teal wavy background
+   ═══════════════════════════════════════════════════════════════════════ */
+
+.about-branches {
+  background: var(--primary);
+  padding: var(--space-5xl) 0 var(--space-3xl);
+  position: relative;
+}
+
+.about-branches__wave-top {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: var(--surface-container-low);
+  clip-path: ellipse(55% 100% at 50% 0%);
+}
+
+.branches-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  max-width: 900px;
+  margin: var(--space-3xl) auto 0;
+}
+
+.branch-card {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+  padding: 2.5rem;
+  color: white;
+  text-align: center;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.branch-card:hover {
+  transform: translateY(-6px);
+}
+
+.branch-card__icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+}
+
+.branch-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+}
+
+.branch-card__details {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  text-align: left;
+}
+
+.branch-card__details li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: var(--body-md-size);
+  line-height: 1.5;
+  padding: 0.4rem 0;
+  opacity: 0.92;
+}
+
+.branch-card__details li img {
+  flex-shrink: 0;
+  filter: brightness(10);
+}
+
+.branch-card .btn {
+  margin-top: 0.5rem;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════════════════════ */
+
+@media (max-width: 900px) {
+  .about-hero {
+    min-height: 65vh;
+  }
+  .about-hero__content {
+    max-width: 90%;
+  }
+
+  /* Magazine Spread responsive — 2×2 grid on tablet */
+  .mag-values { grid-template-columns: repeat(2, 1fr); }
+  .mag-card:nth-child(2) { border-right: none; }
+  .mag-card:nth-child(3),
+  .mag-card:nth-child(4) { border-top: 1px solid rgba(255,255,255,0.06); }
+  .mag-spread { margin-inline: 1rem; }
+
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .branches-grid { grid-template-columns: 1fr; }
+
+  /* Orbital Constellation responsive */
+  .orbit-system { width: 85vw; height: 85vw; }
+  .orbit-sun { width: 100px; height: 100px; }
+  .orbit-sun span { font-size: 1.2rem; }
+  .orbit-ring--inner { width: 240px; height: 240px; margin: -120px 0 0 -120px; }
+  .orbit-ring--outer { width: 370px; height: 370px; margin: -185px 0 0 -185px; }
+  .orbit-planet { width: 68px; height: 68px; font-size: 0.6rem; }
+  .orbit-ring--inner .orbit-planet:nth-child(1) { top: -34px; margin-left: -34px; }
+  .orbit-ring--inner .orbit-planet:nth-child(2) { bottom: 5px; left: -10px; }
+  .orbit-ring--inner .orbit-planet:nth-child(3) { bottom: 5px; right: -10px; }
+  .orbit-ring--outer .orbit-planet:nth-child(1) { top: -34px; margin-left: -34px; }
+  .orbit-ring--outer .orbit-planet:nth-child(2) { right: -34px; margin-top: -34px; }
+  .orbit-ring--outer .orbit-planet:nth-child(3) { bottom: -34px; margin-left: -34px; }
+  .orbit-ring--outer .orbit-planet:nth-child(4) { left: -34px; margin-top: -34px; }
+}
+
+@media (max-width: 600px) {
+  .team-grid { grid-template-columns: 1fr; }
+
+  /* Magazine Spread — single column on mobile */
+  .mag-values { grid-template-columns: 1fr; }
+  .mag-card { border-right: none !important; border-top: 1px solid rgba(255,255,255,0.06); }
+  .mag-hero__quote { padding: 0 1rem; }
+  .mag-hero__quote::before,
+  .mag-hero__quote::after { font-size: 2.4rem; }
+  .mag-spread { border-radius: 16px; margin-inline: 0.5rem; }
+}
